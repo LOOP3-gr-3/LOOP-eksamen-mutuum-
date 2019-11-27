@@ -20,15 +20,15 @@ if(!isset($_SESSION['user_id'])) {
 
 
 
-<div id="site'highlights" style="text-align:center">
+<div class="site'highlights" style="text-align:center">
     <hr>
         <h1><strong>Min side</strong></h1>
     <hr>
 </div>
 
-<div id="om-os-container">
-<div id="container-las">
-    <div id="container1-5">
+<div class="om-os-container">
+<div class="container-las">
+    <div class="container1-5">
         <div id="l-billede">
             <a href="minprofil.php"><img id="billede1" src="images/profilny.png"></a>
         </div>
@@ -37,7 +37,7 @@ if(!isset($_SESSION['user_id'])) {
 
     </div>
     
-    <div id="container2-5">
+    <div class="container2-5">
         <div id="l-billede">
             <a href="KFUM.php"><img id="billede1" src="images/r%C3%A5dgivningny-kopi.png"></a>
             
@@ -47,7 +47,7 @@ if(!isset($_SESSION['user_id'])) {
     </div>
     
     
-    <div id="container3-5">
+    <div class="container3-5">
         <div id="l-billede">
             <a href="matchsite.php"><img id="billede1" src="images/matchny-kopi.png"></a>
         </div>
@@ -56,17 +56,17 @@ if(!isset($_SESSION['user_id'])) {
     </div>
     
     
-    <div id="container4-5">
-        <div id="l-billede">
-            <a href="kontrakt.php"><img id="billede1" src="images/kontraktny.png"></a>
+    <div class="container4-5">
+        <div class="l-billede">
+            <a href="kontrakt.php"><img class="billede1" src="images/kontraktny.png"></a>
         </div>
         
         
     </div>
     
-    <div id="container5-5">
+    <div class="container5-5">
         <div id="l-billede">
-            <a href="statistik.php"><img id="billede2" src="images/statistikny.png"></a>
+            <a href="statistik.php"><img class="billede2" src="images/statistikny.png"></a>
         </div>
         
         

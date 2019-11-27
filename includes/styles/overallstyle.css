@@ -122,10 +122,7 @@ h3 {
 
 /*__________________________________________________OPRET BRUGER________________________________________Mikkel */
 /* overskrifterne på login og opret bruger */
-.nheading{
-    text-align:center;
-    padding:20px;
-}
+
 
                         /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
 .passwordtjek{
@@ -137,10 +134,6 @@ input::placeholder{
 
 .logmag{
     margin:15px;
-}
-
-#xwopretbruger {
-    border-radius: 3em;
 }
 
 
@@ -157,7 +150,7 @@ input::placeholder{
 
 /*___________________________________ MIN SIDE ___________________________________ made by Lasse*/
 
-#container-las{             /*Beskriver den container som de 5 andre                                   "under" containere befinder sig i*/
+.container-las{             /*Beskriver den container som de 5 andre                                   "under" containere befinder sig i*/
     position:relative;
     height:35em;
     width:auto;
@@ -168,7 +161,7 @@ input::placeholder{
 
 /*Disse containere er IKKE selve billedet*/
 
-#container1-5{          /*Container 1 - "Min profil" */ 
+.container1-5{          /*Container 1 - "Min profil" */ 
     display:block;
     position:absolute;
     width: 15%;
@@ -177,7 +170,7 @@ input::placeholder{
     margin: 1px;
 }
 
-#container2-5{          /*Container 2 - "Rådgivning" */ 
+.container2-5{          /*Container 2 - "Rådgivning" */ 
     display:block;
     position:absolute;
     width: 15%;
@@ -186,7 +179,7 @@ input::placeholder{
     margin: 1px;
 }
 
-#container3-5{          /*Container 3 - "Match" */
+.container3-5{          /*Container 3 - "Match" */
     display:block;
     position:absolute;
     width: 15%;
@@ -197,7 +190,7 @@ input::placeholder{
     
 }
 
-#container4-5{          /*Container 4 - "Opret kontrakt" */
+.container4-5{          /*Container 4 - "Opret kontrakt" */
     display:block;
     position:absolute;
     width: 15%;
@@ -208,7 +201,7 @@ input::placeholder{
     
 }
 
-#container5-5{          /*Container 5 - "Statistik" */
+.container5-5{          /*Container 5 - "Statistik" */
     display:block;
     position:absolute;
     width: 15%;
@@ -218,7 +211,7 @@ input::placeholder{
     top:16em;
 }
 
-#l-billede{             /*Fortæller noget om billedernes position*/
+.l-billede{             /*Fortæller noget om billedernes position*/
     position:relative;
     margin-left:18%;
     margin-right:18%;
@@ -281,12 +274,12 @@ td, th {
 
 
 /*---------------------Billederne til min side------Lasse--------*/
-#billede1{
+.billede1{
     width:200%;
     height:200%;
 
 }
-#billede2{
+.billede2{
     width:200%;
     height:200%;
 }
@@ -743,7 +736,7 @@ h1{             /*ændringer af overskriften h1*/
 }
 
 /*----------------------Knapper-----------------------MAja og Wasfia----*/
-#xwknap { /*giver en rund border radius*/
+.xwknap { /*giver en rund border radius*/
     border-radius: 3em;
 
 }
@@ -775,7 +768,7 @@ h2{                     /*h2 overskrift ændring*/
 
 
 /*--------------------FORSIDE----------------------------------------made by wasfia og Maja*/
-#site-highlights {                /*site-highlights - der laves streg over og under motto skiltet*/
+.site-highlights {                /*site-highlights - der laves streg over og under motto skiltet*/
     width: 100%;
     margin-bottom: 0.1em;
     text-align: center;
