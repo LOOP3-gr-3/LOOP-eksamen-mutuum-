@@ -370,34 +370,34 @@ body{               /*Giver body farve - overfladisk*/
     background-color:white;
 }
     
-#las-tekst-venstre{ /*str på FAQ, HB og Kontakt i footer*/
+.las-tekst-venstre{ /*str på FAQ, HB og Kontakt i footer*/
     font-size:.5em !important;
 }
     
-#oplysninger-footer-2{  /*container for FAQ, HB..... beskriver                                                                  placering*/
+.oplysninger-footer-2{  /*container for FAQ, HB..... beskriver                                                                  placering*/
     padding: 0px 0px !important;
     margin-top: 1.5em;
     left:30%;
 }
 
-#billede{       /*grøn knap footer, str og afstand fra start footer*/ 
+.billedefoot{       /*grøn knap footer, str og afstand fra start footer*/ 
     width:85%;
     height:82%; 
 }
     
-#billede-footer{                /*container ved grøn knap footer*/
+.billede-footer{                /*container ved grøn knap footer*/
     margin-top:.3em !important;
     left:35% !important;
     width:40% !important;
     height: 30% !important;
 }
     
-#oplysninger-footer{ /*Beskriver CVR, adresse ++ i footer*/
+.oplysninger-footer{ /*Beskriver CVR, adresse ++ i footer*/
     font-size:0.5em;
     left:35% !important;
     margin-top:4em;
 }
-#footer-container{      /*Er med til at skabe afstand fra footer og                                             content*/
+.footer-container{      /*Er med til at skabe afstand fra footer og                                             content*/
     margin-bottom:0em!important;
     margin-top:20em !important;
 }
@@ -491,21 +491,21 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     background-color:white;
 }
     
-#las-tekst-hojre{   /*str på CVR osv i footer*/
+.las-tekst-hojre{   /*str på CVR osv i footer*/
     font-size:.7em !important;
 }
     
-#oplysninger-footer{       /*Beskriver CVR, adresse ++ i footer*/
+.oplysninger-footer{       /*Beskriver CVR, adresse ++ i footer*/
     left: 75% !important;
     margin-top:1em;
 }
     
-#footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
+.footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
     height:7em !important;
     margin-top:2em !important;
 }
     
-#las-tekst-venstre{ /*str på FAQ, HB og Kontakt i footer*/
+.las-tekst-venstre{ /*str på FAQ, HB og Kontakt i footer*/
     font-size:1em !important;
 }
     
@@ -573,16 +573,20 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     height:8.5em !important;      
 }     
     
-#las-tekst-hojre{   /*str på CVR osv i footer*/
+.billedefoot{       /*grøn knap footer, str og afstand fra start footer*/ 
+    width:85%;
+    height:82%; 
+}
+.las-tekst-hojre{   /*str på CVR osv i footer*/
     font-size:0.7em !important;
 }
     
-#oplysninger-footer{    /*Beskriver CVR, adresse ++ i footer*/
+.oplysninger-footer{    /*Beskriver CVR, adresse ++ i footer*/
     left: 80% !important;
     margin-top:0.5em;
 }
     
-#footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
+.footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
     height:6em !important;
 }
     
@@ -645,7 +649,7 @@ h1{             /*ændringer af overskriften h1*/
 
 /* ________________________________FOOTER__________________ made by Wasfia*/
 
-#footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
+.footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
     position:fixed;
     width:100%;
     height:110px;
@@ -656,13 +660,13 @@ h1{             /*ændringer af overskriften h1*/
     margin-bottom: 0em;
 }
 
-#oplysninger-footer{    /*Beskriver CVR, adresse ++ i footer*/
+.oplysninger-footer{    /*Beskriver CVR, adresse ++ i footer*/
     position:absolute;
     left:82%;
     padding: 20px 10px;
 }
 
-#oplysninger-footer-2{  /*container for FAQ, HB..... beskriver                                                                  placering*/
+.oplysninger-footer-2{  /*container for FAQ, HB..... beskriver                                                                  placering*/
     position:absolute;
     padding: 40px 40px;
 }
