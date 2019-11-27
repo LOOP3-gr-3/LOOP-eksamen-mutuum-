@@ -122,20 +122,20 @@ h3 {
 
 /*__________________________________________________OPRET BRUGER________________________________________Mikkel */
 /* overskrifterne på login og opret bruger */
-#nheading{
+.nheading{
     text-align:center;
     padding:20px;
 }
 
                         /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
-#passwordtjek{
+.passwordtjek{
     text-align: center;
 }
 input::placeholder{
     font-style:italic;
 }
 
-#logmag{
+.logmag{
     margin:15px;
 }
 
