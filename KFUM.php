@@ -9,13 +9,13 @@
         die();
 }
 ?>
-<div id="site'highlights" style="text-align:center">
+<div class="site-highlights" style="text-align:center">
     <hr>
         <h1><strong>Rådgivning</strong></h1>
     <hr>
 </div>
 
-<div id="vorescontainer">
+<div class="om-os-container">
 <p><I>Denne side vil der blive arbejdet videre på til loop</I></p>
 </div> 
 

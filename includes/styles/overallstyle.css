@@ -330,25 +330,25 @@ td, th {
     left:1.2em;
 }
 
-#container1-5{      /*Ændringer af containers placering m. billede*/
+.container1-5{      /*Ændringer af containers placering m. billede*/
     left:-5% !important;
 }
     
-#container2-5{      /* ---------------- || -------------------- */
+.container2-5{      /* ---------------- || -------------------- */
     left:50%;
 }
     
-#container3-5{      /* ---------------- || -------------------- */
+.container3-5{      /* ---------------- || -------------------- */
     left:-5%;
     top:7.5em;
 }
     
-#container4-5{      /* ---------------- || -------------------- */
+.container4-5{      /* ---------------- || -------------------- */
     left:50%;
     top:7.5em;
 }
     
-#container5-5{      /* ---------------- || -------------------- */
+.container5-5{      /* ---------------- || -------------------- */
     left:18%;
     top:15em;
 }
@@ -405,14 +405,14 @@ body{               /*Giver body farve - overfladisk*/
     margin-top:20em !important;
 }
     
-/*-----------FORSIDE------------ made by Lasse*/ 
-#margin-container{         /*Får tekst tættere på midten*/
+/*--------------------------------------------------FORSIDE------------------------------------------------- made by Lasse*/ 
+.margin-container{         /*Får tekst tættere på midten*/
     margin-left:0% !important;
     margin-right:0% !important;        
 }
     
 /*MAJA og Wasfia*/
-#xw{
+.xw{
     width:5.2em !important;
     height:4.9em !important;
     }
@@ -445,36 +445,36 @@ body{               /*Giver body farve - overfladisk*/
 }
     
 
-#limg{              /* Fortæller om den nye placering af header img*/
+.limg{              /* Fortæller om den nye placering af header img*/
     top: -5px;
     left: 50px;
     height:7em;
     width:8em;
 }
     
-#llogin{            /*Login knap position ændring*/
+.llogin{            /*Login knap position ændring*/
     left:60%;     
 }
     
-#container1-5{      /*Ændringer af containers placering m. billede*/
+.container1-5{      /*Ændringer af containers placering m. billede*/
     left:18% !important;
 }
     
-#container2-5{       /* ---------------- || -------------------- */
+.container2-5{       /* ---------------- || -------------------- */
     left:52%;
 }
     
-#container3-5{       /* ---------------- || -------------------- */
+.container3-5{       /* ---------------- || -------------------- */
     left:18%;
     top:12em;
 }
     
-#container4-5{       /* ---------------- || -------------------- */
+container4-5{       /* ---------------- || -------------------- */
     left:52%;
     top:12em;
 }
     
-#container5-5{       /* ---------------- || -------------------- */
+.container5-5{       /* ---------------- || -------------------- */
     left:20.5%;
     top:24em;
 }
@@ -516,7 +516,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     font-size:1em !important;
 }
     
-#margin-container{  /*Får tekst tættere på midten*/
+.margin-container{  /*Får tekst tættere på midten*/
     margin-left:2em !important;
     margin-right:2em !important;  
 }
@@ -535,12 +535,12 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     top:1.75em;
 }
 
-#limg{              /* Fortæller om den nye placering af header img*/
+.limg{              /* Fortæller om den nye placering af header img*/
     height:6em;
     width: 7em;
 }
     
-#llogin{            /*Login knap position ændring*/
+.llogin{            /*Login knap position ændring*/
     width:15%;
     left:75%;   
     margin-top:2.7%;
@@ -550,23 +550,23 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     margin:0.25em;
 }
     
-#container1-5{      /*Ændringer af containers placering m. billede*/
+.container1-5{      /*Ændringer af containers placering m. billede*/
     left:0% !important;
 }
     
-#container2-5{      /* ---------------- || -------------------- */
+.container2-5{      /* ---------------- || -------------------- */
     left:25%;
 }
     
-#container3-5{      /* ---------------- || -------------------- */
+.container3-5{      /* ---------------- || -------------------- */
     left:50%;
 }
     
-#container4-5{      /* ---------------- || -------------------- */
+.container4-5{      /* ---------------- || -------------------- */
     left:75%;
 }
     
-#container5-5{      /* ---------------- || -------------------- */
+.container5-5{      /* ---------------- || -------------------- */
     left:34.5%;
     top:12em;
 }
@@ -597,7 +597,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     height:6em !important;
 }
     
-#las-container{     /*definere en container m/ content - tiltænkt som                   være den container der skubber footeren væk fra body*/
+.las-container{     /*definere en container m/ content - tiltænkt som                   være den container der skubber footeren væk fra body*/
     margin-bottom:40em !important;
     position:relative;
 }
@@ -618,7 +618,7 @@ body{           /*body farve hvid, overfladisk*/
     margin-bottom:6.5em !important;
 }
     
-#llogin{                /*Formindske login-knap og størrelse*/
+.llogin{                /*Formindske login-knap og størrelse*/
     width:15%;
     left:75%;   
     margin-top:2.7%;
@@ -628,13 +628,13 @@ body{           /*body farve hvid, overfladisk*/
     margin-bottom:10em !important;
 }
 
-#limg{                 /* Fortæller om den nye placering af header img*/
+.limg{                 /* Fortæller om den nye placering af header img*/
     left: 50px;
     height:100;
     width:9em;
 }
        
-#lmenu{             /*fortæller om burgers placering, højde og bredde*/
+.lmenu{             /*fortæller om burgers placering, højde og bredde*/
     margin: 50px 0 20px 20px;
   
 }
@@ -643,7 +643,7 @@ body{           /*body farve hvid, overfladisk*/
     top:-.5em;
 }
 
-#container5-5{  /*Ændringer af containers placering m. billede*/
+.container5-5{  /*Ændringer af containers placering m. billede*/
     width:25%;    
 }
     
@@ -766,12 +766,6 @@ transition: all 250ms ease-in-out 0s;
     border-radius: 3em;
 }
 
-/*----------------------Knapper-----------------------MAja og Wasfia----*/
-.xwknap { /*giver en rund border radius*/
-    border-radius: 3em;
-
-}
-
 
 /*----------------Tekst størrelser, skrifter og typer----------made by Lasse*/
 
@@ -787,12 +781,12 @@ h2{                     /*h2 overskrift ændring*/
     text-align:center;
 }
 
-#margin-container{      /*centrere tekst ud fra margin*/
+.margin-container{      /*centrere tekst ud fra margin*/
     margin-left: 25em;
     margin-right:25em;
 }
 
-#hvad-er-mutuum{    /*tekst beskrivelse*/
+.hvad-er-mutuum{    /*tekst beskrivelse*/
     font-size:2em;
     color:black;
 }
@@ -813,7 +807,7 @@ h2{                     /*h2 overskrift ændring*/
         font-size: 1.5em;
     }
     
-#xw {
+.xw {
         width: 20%;
         height:auto;
     }

@@ -13,12 +13,12 @@
 <!--Her hentes alle data fra databasen ind, så det kan indsættes i det forskellige tabeller. Der er benyttet natural join ved laantager_underskrift_id og laangiver_underskrift_id for at siden kan registrere hvem der har skrevet under?-->
 
 
-<div id="site'highlights" style="text-align:center">
+<div class="site-highlights">
     <hr>
         <h1><strong>Mine Aftaler</strong></h1>
     <hr>
 </div>
-<div id="om-os-container">
+<div class="om-os-container">
 <I id="xlille">På denne side finder ud alle dine kontrakter til udlån, oprettede kontrakter og historik over alle underskrevne aftaler</I><br><br>
 
 <!-- billede af lup ved søgefeltet-->
