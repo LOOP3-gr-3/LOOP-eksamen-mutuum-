@@ -678,25 +678,25 @@ h1{             /*ændringer af overskriften h1*/
     padding: 40px 40px;
 }
 
-#las-tekst-venstre{     /*str på FAQ, HB og Kontakt i footer*/
+.las-tekst-venstre{     /*str på FAQ, HB og Kontakt i footer*/
       text-decoration:none;
       color:white;
       font-size:1.2em;
 }
 
-#las-tekst-venstre:hover{/*str på FAQ, HB og Kontakt i footer når der                                                                  hovers*/
+.las-tekst-venstre:hover{/*str på FAQ, HB og Kontakt i footer når der                                                                  hovers*/
       opacity:0.6;
       color:lightgreen;
       font-weight: 700;
 }
 
-#las-tekst-hojre{       /*str på CVR osv i footer*/
+.las-tekst-hojre{       /*str på CVR osv i footer*/
       text-decoration:none;
       color:white;
       font-size:0.9em;
 }
 
-#billede-footer{        /*container ved grøn knap footer*/
+.billede-footer{        /*container ved grøn knap footer*/
       position:absolute;
       width:250px;
       height: 3em;
@@ -705,7 +705,7 @@ h1{             /*ændringer af overskriften h1*/
       border-radius:3em;
 }
 
-#billede-footer:hover{  /*hover funktion på img i footer*/
+.billede-footer:hover{  /*hover funktion på img i footer*/
     opacity:0.5;
 }
 
@@ -732,7 +732,7 @@ h1{             /*ændringer af overskriften h1*/
 
 /*----------------------OM OS------------------------------------------made by Lasse*/
 
-#om-os-container{   /*container der sørger for rum imellem content og footer*/
+.om-os-container{   /*container der sørger for rum imellem content og footer*/
     position:relative;
     width:100%;
     height:auto;
