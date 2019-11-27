@@ -1,0 +1,802 @@
+/*__________________________________________________HEADER________________________________________made by Lasse*/
+
+#jumbotron{
+    padding:0!important;
+    padding-bottom: 30px !important;
+    padding-top: 7px !important;
+    margin-bottom:0% !important;
+}
+
+#lmenu{                 /*fortæller om burgers placering, højde og bredde*/
+    position: absolute;
+    width: 3em;
+    height: 4em;
+    cursor: pointer;        /*viser en hånd istedet for pil*/
+    right: 2em;           /*afstand fra højre*/
+}
+
+.lbar{                  /*fortæller om burgers farver, display, højde og bredde før åbning*/
+    position: relative;
+    height: 0.5em;
+    width: 100%;
+    background-color:#585858;
+    display: block;
+    border-radius: 5em;   
+    transition:0.7s ease; /*hastigheden fra burger til kryds*/
+    right: 15.5%; 
+    top: 2em;
+    }
+
+#lbar1{                 /*giver toppen af burgeren*/
+    transform:translateY(0.2em);
+}
+
+#lbar2{                 /*giver midten af burgeren*/
+    transform:translateY(0.3em);
+}
+
+#lbar3{                 /*giver bunden af burgeren*/
+    transform:translateY(0.4em);
+}
+
+.lchange .lbar{           /*angiver farven på burger efter åben*/
+    background-color:forestgreen;
+}
+.lchange #lbar1{           /*får bar1 til at dreje til kryds*/
+    transform: translateY(0.3em) rotateZ(-45deg);
+}
+
+.lchange #lbar3{           /*får bar3 til at dreje til kryds*/
+    transform: translateY(-0.65em) rotateZ(45deg);
+}
+.lchange #lbar2{        /*får bar2 til at forsvinde når krydset vises*/
+    opacity: 0;
+}
+.lnav li a:hover{       /*Får nav tekst til at blive market efter åbnet burger*/
+    font-weight: bold;
+}
+
+.lnav li a{             /*giver nav tekst farve og fjerne understregning fra link*/
+    color:black;
+    text-decoration:none;
+}
+
+
+.lnav li{               /* fjerne bullets og beskriver padding i nav tekst efter åben burger*/
+    list-style: none;
+    padding: 1em 0em;
+}
+
+.lnav{                  /*fortæller om navs position, padding, margin*/
+    position:relative;
+    padding:0em;
+    margin: 0 3em;
+    transition: 3s ease;
+    display: none;
+    float:right;
+    top:5em;
+}
+
+.lchange{               /*fortæller omkring krydsets display*/
+    display:block;
+}
+
+.lmenu-block{           /*fortæller om blokken der kommer efter at have åbnet burgeren FØR den er åben. Z-index er prioriteringsrækkefølge*/
+    width:0;
+    height:0;
+    background:radial-gradient(circle, whitesmoke, whitesmoke);
+    transition:0.5s ease;
+    z-index: 1;
+}
+
+.lchange-block{     /*fortæller om blokkens størrelse når burgeren åbnes*/
+    width:100%;
+    height:100%;    
+}
+
+.lmenu-block, #lmenu-bar{   /*fortæller om hvor blokken starter*/
+    top:0;
+    right:0;
+    position:absolute;
+    
+}
+
+#lmenu-bar{             /* fortæller om prioriteringsrækkefølgen - gør egentligt bare, at menu-bar baggrund ikke dækker alt*/
+    z-index: 2;
+}
+
+/*__________________________________________________Alle overskrifter________________________________________Maja og Lasse*/
+
+h1 {
+    font-size: 1.5em;
+    font-family: arial;
+    color: forestgreen;
+}
+
+h3 {
+    font-size: 1.2em;
+    font-family: arial;
+    color:darkgreen;
+}
+
+
+/*__________________________________________________OPRET BRUGER________________________________________Mikkel */
+/* overskrifterne på login og opret bruger */
+#nheading{
+    text-align:center;
+    padding:20px;
+}
+
+                        /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
+#passwordtjek{
+    text-align: center;
+}
+input::placeholder{
+    font-style:italic;
+}
+
+#logmag{
+    margin:15px;
+}
+
+#xwopretbruger {
+    border-radius: 3em;
+}
+
+
+/*-------------------------------------------------BILLEDE I HEADER------------------------------------ made by Lasse*/
+#limg{
+    margin:0.2em;       /*Beskriver billedet i headeren*/
+    position: absolute;
+    top: -0.5em;
+    left: 3em;
+    height:8em;
+    width:10em; 
+}
+#container-content{     /*Beskriver containerne som billedet er i* -                                nødvendigt? måske ikke*/
+    width:100%;
+    height:100000%;
+}
+
+
+/*___________________________________ MIN SIDE ___________________________________ made by Lasse*/
+
+#container-las{             /*Beskriver den container som de 5 andre                                   "under" containere befinder sig i*/
+    position:relative;
+    height:35em;
+    width:auto;
+    margin-bottom:2em;
+    margin-left:5%;
+    margin-right:5%;
+}
+
+/*Disse containere er IKKE selve billedet*/
+
+#container1-5{          /*Container 1 - "Min profil" */ 
+    display:block;
+    position:absolute;
+    width: 15%;
+    height: 30%;
+    left:7%;
+    margin: 1px;
+}
+
+#container2-5{          /*Container 2 - "Rådgivning" */ 
+    display:block;
+    position:absolute;
+    width: 15%;
+    height: 30%;
+    left:27%;
+    margin: 1px;
+}
+
+#container3-5{          /*Container 3 - "Match" */
+    display:block;
+    position:absolute;
+    width: 15%;
+    height: 30%;
+    left:47%;
+    margin: 1px;
+    
+    
+}
+
+#container4-5{          /*Container 4 - "Opret kontrakt" */
+    display:block;
+    position:absolute;
+    width: 15%;
+    height: 30%;
+    left:67%;
+    margin: 1px;
+   
+    
+}
+
+#container5-5{          /*Container 5 - "Statistik" */
+    display:block;
+    position:absolute;
+    width: 15%;
+    height: 30%;
+    left:29%;
+    margin: 2px;
+    top:16em;
+}
+
+#l-billede{             /*Fortæller noget om billedernes position*/
+    position:relative;
+    margin-left:18%;
+    margin-right:18%;
+    top:0.5em;
+    
+}
+
+#l-billede:hover{       /*Fader billede når der hovers*/
+    opacity:0.4;
+}
+
+
+/*-------------------------------------------LOG IND BAR I HEADER--------------------------------made by Lasse*/
+
+#llogin{                /*Fortæller om LOG IND knaps placering, position, rammen omkring og margin fra top og bund af jumbotron*/
+    position:relative; 
+    width: 25%;
+    left:45%;   
+    opacity:0.6;
+    margin-top:5%;
+    margin-bottom: 2%;
+    text-align:center;
+    border:0.09em solid black;
+    border-radius:20px;
+    text-decoration: none;
+}
+
+#llogin a{      /*Fjerne den standard blå farve ved link og laver sort*/
+    color:black;
+}
+
+#llogin a:hover{   /*Beskriver funktionen når man hover LOG IND knappen,                    teksten ændres til bold grøn, ingen understregning*/
+    color:forestgreen;
+    text-decoration: none;
+    font-weight: 800;    
+    
+}
+
+/*------------------------------------ mine aftaler ----------------------------Maja-*/
+#Xlup  { /*sørger for at billede med luppen ikke bliver overdrevet stor*/
+    width: 10%;
+    height: auto;
+} 
+table {                     /*denne sørger for at kolonner ligger helt op ad hinanden og angiver skrift samt bredde*/    
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;}
+
+/*Her angives designet på kolonnerne, der er valgt en solid ramme (grå), at skriften skal stå til venstre og tykkelse på kanten/borderen*/
+td, th {
+    border: 0.5em solid #dddddd;
+    text-align: left;
+    padding: 0.2em;
+
+}
+#xlille {  /*lille skråskrift under overskriften*/
+    font-size: 0.8em;
+    padding: 1em;
+}
+
+
+/*---------------------Billederne til min side------Lasse--------*/
+#billede1{
+    width:200%;
+    height:200%;
+
+}
+#billede2{
+    width:200%;
+    height:200%;
+}
+
+    
+#xx {
+    text-align: center;
+}
+
+
+
+/*-------------------------------------@MEDIA QUERYS-------------------------------------------- made by Lasse*/
+
+/*Vi starter med en Media Screen på en iPhone 5/5s*/
+@media screen and (min-width: 300px)and (max-width:759px){
+
+#jumbotron{                     
+    background-color:whitesmoke;
+    border-radius:0% !important;
+}
+#om-os-container{                       /*Sørger for plads imellem                                              content og footer*/
+    margin-bottom: 7em !important;
+}
+
+#llogin{                    /*Formindske login-knap og størrelse*/
+    position:relative; 
+    width: 25%;
+    left:50%;   
+    opacity:0.6;
+    text-align:center;
+    border:0.09em solid black;
+    border-radius:20px;
+    text-decoration: none;
+    top:-0.15em;
+} 
+    
+
+#container-las{             /*Ændringer i den overordnede container*/
+    margin-bottom:2em !important;
+    height:25em !important;
+}
+    
+.lbar{          /*Fortæller om ændringer ift. burgers placering*/
+    top:1.2em;
+    left:1.2em;
+}
+
+#container1-5{      /*Ændringer af containers placering m. billede*/
+    left:-5% !important;
+}
+    
+#container2-5{      /* ---------------- || -------------------- */
+    left:50%;
+}
+    
+#container3-5{      /* ---------------- || -------------------- */
+    left:-5%;
+    top:7.5em;
+}
+    
+#container4-5{      /* ---------------- || -------------------- */
+    left:50%;
+    top:7.5em;
+}
+    
+#container5-5{      /* ---------------- || -------------------- */
+    left:18%;
+    top:15em;
+}
+    
+#billede1{          /*Fortæller om str. ændringer på billeder*/
+    width:500%;
+    height:500%;
+}
+    
+#billede2{          /* ---------------- || -------------------- */
+    width:600%;
+    height:7em !important;      
+}
+      
+#limg{              /* Fortæller om den nye placering af header img*/
+    left:5%;
+    width:30%;
+    height:15%;
+}
+    
+body{               /*Giver body farve - overfladisk*/
+    background-color:white;
+}
+    
+#las-tekst-venstre{ /*str på FAQ, HB og Kontakt i footer*/
+    font-size:.5em !important;
+}
+    
+#oplysninger-footer-2{  /*container for FAQ, HB..... beskriver                                                                  placering*/
+    padding: 0px 0px !important;
+    margin-top: 1.5em;
+    left:30%;
+}
+
+#billede{       /*grøn knap footer, str og afstand fra start footer*/ 
+    width:85%;
+    height:82%; 
+}
+    
+#billede-footer{                /*container ved grøn knap footer*/
+    margin-top:.3em !important;
+    left:35% !important;
+    width:40% !important;
+    height: 30% !important;
+}
+    
+#oplysninger-footer{ /*Beskriver CVR, adresse ++ i footer*/
+    font-size:0.5em;
+    left:35% !important;
+    margin-top:4em;
+}
+#footer-container{      /*Er med til at skabe afstand fra footer og                                             content*/
+    margin-bottom:0em!important;
+    margin-top:20em !important;
+}
+    
+/*-----------FORSIDE------------ made by Lasse*/ 
+#margin-container{         /*Får tekst tættere på midten*/
+    margin-left:0% !important;
+    margin-right:0% !important;        
+}
+    
+/*MAJA og Wasfia*/
+#xw{
+    width:5.2em !important;
+    height:4.9em !important;
+    }
+}
+
+
+
+/*Media Screen for iPads*/
+@media screen and (min-width: 768px)and (max-width:959px) {
+  #jumbotron {  /*Beskriver ændringer i header/BS*/
+    background-color: whitesmoke;
+    border-radius:0 !important;
+  }
+
+
+.lbar{              /*fortæller om burgers farver, display,                                    højde og bredde før åbning*/
+    position: relative;
+    height: 0.5em;
+    width: 100%;
+    background-color:#585858;
+    display: block;
+    border-radius: 5em;   
+    transition:0.7s ease; /*hastigheden fra burger til kryds*/
+    right: 15.5%; 
+    top: 2.5em;
+}
+    
+
+#limg{              /* Fortæller om den nye placering af header img*/
+    top: -5px;
+    left: 50px;
+    height:7em;
+    width:8em;
+}
+    
+#llogin{            /*Login knap position ændring*/
+    left:60%;     
+}
+    
+#container1-5{      /*Ændringer af containers placering m. billede*/
+    left:18% !important;
+}
+    
+#container2-5{       /* ---------------- || -------------------- */
+    left:52%;
+}
+    
+#container3-5{       /* ---------------- || -------------------- */
+    left:18%;
+    top:12em;
+}
+    
+#container4-5{       /* ---------------- || -------------------- */
+    left:52%;
+    top:12em;
+}
+    
+#container5-5{       /* ---------------- || -------------------- */
+    left:20.5%;
+    top:24em;
+}
+    
+#billede1{          /*Fortæller om str. ændringer på billeder*/
+    width:200%;
+    height:200%;
+}
+    
+#billede2{           /* ---------------- || -------------------- */
+    width:400%;
+    height:11.5em !important;      
+}
+
+#l-billede{         /*holder billeder på pladsen*/
+    margin-left:auto;
+    margin-right:auto;
+}
+    
+body{               /*body farve, overfladisk at nævne i hver Media*/
+    background-color:white;
+}
+    
+#las-tekst-hojre{   /*str på CVR osv i footer*/
+    font-size:.7em !important;
+}
+    
+#oplysninger-footer{       /*Beskriver CVR, adresse ++ i footer*/
+    left: 75% !important;
+    margin-top:1em;
+}
+    
+#footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
+    height:7em !important;
+    margin-top:2em !important;
+}
+    
+#las-tekst-venstre{ /*str på FAQ, HB og Kontakt i footer*/
+    font-size:1em !important;
+}
+    
+#margin-container{  /*Får tekst tættere på midten*/
+    margin-left:2em !important;
+    margin-right:2em !important;  
+}
+}
+    
+    
+    
+/*Media Screen for større iPads og mindre PC skærme*/
+@media screen and (min-width: 960px) and (max-width:1299px) {
+#jumbotron{
+    background-color:whitesmoke;
+    border-radius:0 !important;
+}
+    
+.lbar{                  /*fortæller om burgers farver, display, højde og                            bredde før åbning*/
+    top:1.75em;
+}
+
+#limg{              /* Fortæller om den nye placering af header img*/
+    height:6em;
+    width: 7em;
+}
+    
+#llogin{            /*Login knap position ændring*/
+    width:15%;
+    left:75%;   
+    margin-top:2.7%;
+}
+
+#l-billede{         /*holder billeder på pladsen*/
+    margin:0.25em;
+}
+    
+#container1-5{      /*Ændringer af containers placering m. billede*/
+    left:0% !important;
+}
+    
+#container2-5{      /* ---------------- || -------------------- */
+    left:25%;
+}
+    
+#container3-5{      /* ---------------- || -------------------- */
+    left:50%;
+}
+    
+#container4-5{      /* ---------------- || -------------------- */
+    left:75%;
+}
+    
+#container5-5{      /* ---------------- || -------------------- */
+    left:34.5%;
+    top:12em;
+}
+    
+#billede1{          /*Fortæller om str. ændringer på billeder*/
+    width:150%;
+    height:150%;
+}
+    
+#billede2{          /* ---------------- || -------------------- */
+    height:8.5em !important;      
+}     
+    
+#las-tekst-hojre{   /*str på CVR osv i footer*/
+    font-size:0.7em !important;
+}
+    
+#oplysninger-footer{    /*Beskriver CVR, adresse ++ i footer*/
+    left: 80% !important;
+    margin-top:0.5em;
+}
+    
+#footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
+    height:6em !important;
+}
+    
+#las-container{     /*definere en container m/ content - tiltænkt som                   være den container der skubber footeren væk fra body*/
+    margin-bottom:40em !important;
+    position:relative;
+}
+    
+body{           /*body farve hvid, overfladisk*/
+    background-color:white;
+}
+}
+
+/*Media Screen for PC og andre computere med 15*/ 
+@media screen and (min-width: 1300px) {
+    
+#jumbotron {    /*Beskriver ændringer i header/BS*/
+    background-color: whitesmoke;
+}
+ 
+#om-os-container{       /*Sørger for plads imellem content og footer*/
+    margin-bottom:6.5em !important;
+}
+    
+#llogin{                /*Formindske login-knap og størrelse*/
+    width:15%;
+    left:75%;   
+    margin-top:2.7%;
+}
+
+#container-las{         /*Ændringer i den overordnede container*/
+    margin-bottom:10em !important;
+}
+
+#limg{                 /* Fortæller om den nye placering af header img*/
+    left: 50px;
+    height:100;
+    width:9em;
+}
+       
+#lmenu{             /*fortæller om burgers placering, højde og bredde*/
+    margin: 50px 0 20px 20px;
+  
+}
+    
+.lbar{ /*fortæller om burgers farver, display, højde og bredde før                                  åbning*/
+    top:-.5em;
+}
+
+#container5-5{  /*Ændringer af containers placering m. billede*/
+    width:25%;    
+}
+    
+h1{             /*ændringer af overskriften h1*/
+    font-size:2.5em;
+}
+}
+
+
+
+/* ________________________________FOOTER__________________ made by Wasfia*/
+
+#footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
+    position:fixed;
+    width:100%;
+    height:110px;
+    bottom:0%;
+    left:0%;
+    background-color:black;
+    margin-top:2em;
+    margin-bottom: 0em;
+}
+
+#oplysninger-footer{    /*Beskriver CVR, adresse ++ i footer*/
+    position:absolute;
+    left:82%;
+    padding: 20px 10px;
+}
+
+#oplysninger-footer-2{  /*container for FAQ, HB..... beskriver                                                                  placering*/
+    position:absolute;
+    padding: 40px 40px;
+}
+
+#las-tekst-venstre{     /*str på FAQ, HB og Kontakt i footer*/
+      text-decoration:none;
+      color:white;
+      font-size:1.2em;
+}
+
+#las-tekst-venstre:hover{/*str på FAQ, HB og Kontakt i footer når der                                                                  hovers*/
+      opacity:0.6;
+      color:lightgreen;
+      font-weight: 700;
+}
+
+#las-tekst-hojre{       /*str på CVR osv i footer*/
+      text-decoration:none;
+      color:white;
+      font-size:0.9em;
+}
+
+#billede-footer{        /*container ved grøn knap footer*/
+      position:absolute;
+      width:250px;
+      height: 3em;
+      margin-top:25px;
+      left:42%;
+      border-radius:3em;
+}
+
+#billede-footer:hover{  /*hover funktion på img i footer*/
+    opacity:0.5;
+}
+
+
+
+/*--------------------------Kontrakt--------------------------Maja-*/
+
+#xopretudlan {
+    text-align: center;
+}
+
+/*knapperne placere over og under hinanden*/
+#xnetveark {  /*knap til låneaftale til netværk*/
+    float: left;
+    width: 45%;
+}
+
+#xmatchside { /*knap til låneaftale til vilkårlig*/
+    float: right;
+    width: 45%;
+
+}
+
+
+/*----------------------OM OS------------------------------------------made by Lasse*/
+
+#om-os-container{   /*container der sørger for rum imellem content og footer*/
+    position:relative;
+    width:100%;
+    height:auto;
+    margin-bottom:3em;
+    padding: 20px;
+}
+
+
+/*-----------------------MinProfil--------------------*/
+#retoplysninger, #mineaftaler {
+    border-radius: 3em;
+}
+
+/*----------------------Knapper-----------------------MAja og Wasfia----*/
+#xwknap { /*giver en rund border radius*/
+    border-radius: 3em;
+
+}
+
+
+/*----------------Tekst størrelser, skrifter og typer----------made by Lasse*/
+
+h3{                     /*h3 overskrift ændring*/
+    color:forestgreen;
+}
+
+h2{                     /*h2 overskrift ændring*/
+    color:forestgreen;
+}
+
+#centrer-tekst{         /*centrer tekst*/
+    text-align:center;
+}
+
+#margin-container{      /*centrere tekst ud fra margin*/
+    margin-left: 25em;
+    margin-right:25em;
+}
+
+#hvad-er-mutuum{    /*tekst beskrivelse*/
+    font-size:2em;
+    color:black;
+}
+
+
+/*--------------------FORSIDE----------------------------------------made by wasfia og Maja*/
+#site-highlights {                /*site-highlights - der laves streg over og under motto skiltet*/
+    width: 100%;
+    margin-bottom: 0.1em;
+    text-align: center;
+}
+
+.hr{
+    clear: left;
+}
+
+#xwlet {    /*teskt beskrivelse*/
+        font-size: 1.5em;
+    }
+    
+#xw {
+        width: 20%;
+        height:auto;
+    }
+
+
+
