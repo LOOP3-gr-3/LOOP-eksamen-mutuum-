@@ -4,11 +4,14 @@
     require_once('includes/header.php');
     //require_once('includes/footer.php');
 ?>
-<div class="om-os-container">
 
-<div class="site-hightlights"><!-- Dette er overskriften for dette indhold -->
-<h3><strong>FAQ</strong></h3>
+
+<div class="site-highlights"><!-- Dette er overskriften for dette indhold -->
+    <hr>
+    <h1><strong>FAQ</strong></h1>
+    <hr>
 </div>
+<div class="om-os-container">
 <p>Denne sider indeholder de mest stillede spørgsmål. Hvis der ikke er svar på det du søger, så endelig benyt kontaktinformationerne i bunden</p>
 
 <!-- med U får jeg html til at lave understregning på den teskt indenfor den kommando-->

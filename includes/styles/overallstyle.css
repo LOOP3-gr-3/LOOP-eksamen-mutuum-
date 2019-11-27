@@ -403,7 +403,7 @@ body{               /*Giver body farve - overfladisk*/
 }
     
 /*-----------FORSIDE------------ made by Lasse*/ 
-#margin-container{         /*Får tekst tættere på midten*/
+.margin-container{         /*Får tekst tættere på midten*/
     margin-left:0% !important;
     margin-right:0% !important;        
 }
@@ -509,7 +509,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     font-size:1em !important;
 }
     
-#margin-container{  /*Får tekst tættere på midten*/
+.margin-container{  /*Får tekst tættere på midten*/
     margin-left:2em !important;
     margin-right:2em !important;  
 }
@@ -760,12 +760,12 @@ h2{                     /*h2 overskrift ændring*/
     text-align:center;
 }
 
-#margin-container{      /*centrere tekst ud fra margin*/
+.margin-container{      /*centrere tekst ud fra margin*/
     margin-left: 25em;
     margin-right:25em;
 }
 
-#hvad-er-mutuum{    /*tekst beskrivelse*/
+.hvad-er-mutuum{    /*tekst beskrivelse*/
     font-size:2em;
     color:black;
 }
@@ -786,7 +786,7 @@ h2{                     /*h2 overskrift ændring*/
         font-size: 1.5em;
     }
     
-#xw {
+.xw {
         width: 20%;
         height:auto;
     }
