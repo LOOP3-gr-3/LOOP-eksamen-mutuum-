@@ -403,7 +403,7 @@ body{               /*Giver body farve - overfladisk*/
 }
     
 /*-----------FORSIDE------------ made by Lasse*/ 
-#margin-container{         /*Får tekst tættere på midten*/
+.margin-container{         /*Får tekst tættere på midten*/
     margin-left:0% !important;
     margin-right:0% !important;        
 }
@@ -509,7 +509,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     font-size:1em !important;
 }
     
-#margin-container{  /*Får tekst tættere på midten*/
+.margin-container{  /*Får tekst tættere på midten*/
     margin-left:2em !important;
     margin-right:2em !important;  
 }
@@ -647,62 +647,27 @@ h1{             /*ændringer af overskriften h1*/
 
 
 
-/* ________________________________FOOTER__________________ made by Wasfia*/
-
-.footer-container{  /*Er med til at skabe afstand fra footer og                                             content*/
-    position:fixed;
-    width:100%;
-    height:110px;
-    bottom:0%;
-    left:0%;
-    background-color:black;
-    margin-top:2em;
-    margin-bottom: 0em;
+/* ________________________________FOOTER__________________ made by Lasse*/
+html,           /*Dette er import fra Bootstrap 4 */ 
+body {
+  height: 100%;
 }
 
-.oplysninger-footer{    /*Beskriver CVR, adresse ++ i footer*/
+#page-content {
+  flex: 1 0 auto;
+}
+
+#sticky-footer {
+  flex-shrink: none;
+}
+                /*Her starter egen CSS kode*/
+.footer-tekst-højre{
     position:absolute;
-    left:82%;
-    padding: 20px 10px;
+    left:1%;
+    height:0%;
+    width:25%;
+    background-color:aqua;
 }
-
-.oplysninger-footer-2{  /*container for FAQ, HB..... beskriver                                                                  placering*/
-    position:absolute;
-    padding: 40px 40px;
-}
-
-.las-tekst-venstre{     /*str på FAQ, HB og Kontakt i footer*/
-      text-decoration:none;
-      color:white;
-      font-size:1.2em;
-}
-
-.las-tekst-venstre:hover{/*str på FAQ, HB og Kontakt i footer når der                                                                  hovers*/
-      opacity:0.6;
-      color:lightgreen;
-      font-weight: 700;
-}
-
-.las-tekst-hojre{       /*str på CVR osv i footer*/
-      text-decoration:none;
-      color:white;
-      font-size:0.9em;
-}
-
-.billede-footer{        /*container ved grøn knap footer*/
-      position:absolute;
-      width:250px;
-      height: 3em;
-      margin-top:25px;
-      left:42%;
-      border-radius:3em;
-}
-
-.billede-footer:hover{  /*hover funktion på img i footer*/
-    opacity:0.5;
-}
-
-
 
 /*--------------------------Kontrakt--------------------------Maja-*/
 
@@ -760,12 +725,12 @@ h2{                     /*h2 overskrift ændring*/
     text-align:center;
 }
 
-#margin-container{      /*centrere tekst ud fra margin*/
+.margin-container{      /*centrere tekst ud fra margin*/
     margin-left: 25em;
     margin-right:25em;
 }
 
-#hvad-er-mutuum{    /*tekst beskrivelse*/
+.hvad-er-mutuum{    /*tekst beskrivelse*/
     font-size:2em;
     color:black;
 }
@@ -786,7 +751,7 @@ h2{                     /*h2 overskrift ændring*/
         font-size: 1.5em;
     }
     
-#xw {
+.xw {
         width: 20%;
         height:auto;
     }
