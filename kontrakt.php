@@ -70,7 +70,7 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
 
         <!--Her vælger jeg indholdet der skal vises når der trykkes på den bestemte knap-->
         <div>
-            <p id="beløb">Beløb</p>
+            <p>Beløb</p>
 
 
             <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="beloeb">
@@ -81,7 +81,7 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
             
             $query1 = "SELECT * FROM beloeb ORDER BY beloeb";    
             $result1 = mysqli_query($con, $query1);
-            $rows = mysqli_num_rows($result1);                          
+            $row1 = mysqli_num_rows($result1);                          
             while($row1 = mysqli_fetch_assoc($result1)) {
             $beloeb_id = $row1['beloeb_id'];
             $beloeb = $row1['beloeb'];
@@ -98,13 +98,13 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
 
         <br>
         <div>
-            <p id="beløb">Rente</p>
-            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="beloeb">
+            <p>Rente</p>
+            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="rente">
                 <option selected value="">Vælg en rente i %</option>
                 <?php
             $query2 = "SELECT * FROM rente ORDER BY rente";    
             $result2 = mysqli_query($con, $query2);
-            $rows = mysqli_num_rows($result2);                          
+            $row2 = mysqli_num_rows($result2);                          
             while($row2 = mysqli_fetch_assoc($result2)) {
             $rente_id = $row2['rente_id'];
             $rente = $row2['rente'];
@@ -120,15 +120,15 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
 
         <br>
         <div>
-            <p id="beløb">Løbetid</p>
+            <p>Løbetid</p>
 
 
-            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="beloeb">
+            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="loebetid">
                 <option selected value="">Vælg løbetiden på kontrakten</option>
                 <?php
             $query3 = "SELECT * FROM bindingsperiode ORDER BY loebetid";    
             $result3 = mysqli_query($con, $query3);
-            $rows = mysqli_num_rows($result3);                          
+            $row3 = mysqli_num_rows($result3);                          
             while($row3 = mysqli_fetch_assoc($result3)) {
             $bindingsperiode_id = $row3['bindingsperiode_id'];
             $loebetid = $row3['loebetid'];
@@ -155,15 +155,15 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
         <strong>Kreditrating</strong>
 
         <div>
-            <p id="beløb"><I>Vælg venligst hvilken kreditrating, som afgør, hvem der kan låne dine penge</I></p>
+            <p><I>Vælg venligst hvilken kreditrating, som afgør, hvem der kan låne dine penge</I></p>
 
 
-            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="beloeb">
+            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="kredit">
                 <option selected value="">Vælg kreditrating</option>
                 <?php
             $query6 = "SELECT * FROM kredit ORDER BY kredit_id";    
             $result6 = mysqli_query($con, $query6);
-            $rows = mysqli_num_rows($result6);                          
+            $row6 = mysqli_num_rows($result6);                          
             while($row6 = mysqli_fetch_assoc($result6)) {
             $kredit_id = $row6['kredit_id'];
             $kreditrating = $row6['kreditrating'];
@@ -181,13 +181,13 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
         <!--afsnit for kontraktbrud med menu for hvilke konsekvenser der skal være ved kontraktbrud-->
         <strong>Kontraktbrud</strong>
         <div>
-            <p id="beløb"><I>Vælg venligst en konsekvens, ved kontraktbrud</I></p>
-            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="beloeb">
+            <p><I>Vælg venligst en konsekvens, ved kontraktbrud</I></p>
+            <select class="btn btn-light dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" name="kontraktbrud">
                 <option selected value="">Vælg konsekvens ved brud på kontrakt</option>
                 <?php
             $query4 = "SELECT * FROM kontraktbrud ORDER BY brud";    
             $result4 = mysqli_query($con, $query4);
-            $rows = mysqli_num_rows($result);                          
+            $row4 = mysqli_num_rows($result);                          
             while($row4 = mysqli_fetch_assoc($result4)) {
             $kontraktbrud_id = $row4['kontraktbrud_id'];
             $brud = $row4['brud'];
@@ -237,7 +237,7 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
             
             $laangiver_underskrift_id = 2;    
         ?>
-            <button method="post" type="submit" id="xwknap" class="btn btn-light" value="<?php $laangiver_underskrift_id; ?>" name="laangiver_underskrift_id">
+            <button type="submit" id="xwknap" class="btn btn-light" value="<?php $laangiver_underskrift_id; ?>" name="laangiver_underskrift_id">
 
                 Underskriv og gem</button></a>
 
