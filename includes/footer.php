@@ -18,9 +18,9 @@
     <div class="billede-footer">
         <?php
             if(isset($_SESSION['user_id'])) {
-            echo '<a href="minside.php"><img id="billede" src="images/B4.png"></a>';
+            echo '<a href="minside.php"><img class="billedefoot" src="images/B4.png"></a>';
             } else
-            echo '<a href="opretbruger.php"><img id="billede" src="images/B3.png"></a>';
+            echo '<a href="opretbruger.php"><img class="billedefoot" src="images/B3.png"></a>';
                 
         
           ?>

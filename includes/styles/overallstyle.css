@@ -580,6 +580,10 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     height:8.5em !important;      
 }     
     
+.billedefoot{       /*grøn knap footer, str og afstand fra start footer*/ 
+    width:85%;
+    height:82%; 
+}
 .las-tekst-hojre{   /*str på CVR osv i footer*/
     font-size:0.7em !important;
 }
