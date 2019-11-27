@@ -1,19 +1,19 @@
 
-  <div id="footer-container">
+  <div class="footer-container">
     
-    <div id="oplysninger-footer">
+    <div class="oplysninger-footer">
       <div class="las-tekst-hojre">
           <strong>CVR nr:</strong> 12345678 <br>
         <strong>Adresse:</strong> Birk Centerpark 15 <br>
         <strong>E-mail:</strong> mutuum@hotmail.com
     </div>
     </div>
-    <div id="oplysninger-footer-2">
-      <div id="oplysninger-footer-2-style">
+    <div class="oplysninger-footer-2">
+ 
         <a class="las-tekst-venstre" href="./faq.php">FAQ</a> 
         <a class="las-tekst-venstre" href="./handelsbetingelser.php">&nbsp;&nbsp;&nbsp;Handelsbetingelser </a> 
         <a class="las-tekst-venstre" href="./kontakt.php" >&nbsp;&nbsp;&nbsp;Kontakt</a> 
-    </div>
+   
       </div>
     <div class="billede-footer">
         <?php
