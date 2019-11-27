@@ -37,30 +37,30 @@ if(isset($_POST['mail']) && isset($_POST['password'])) { /* Her tjekker vi for a
     }
 }
 ?>
-<div id="om-os-container">
-<div class="container" id="nheading">
+
+<div class="site-highlights">
+    <hr>
     <h2><strong>Log ind</strong></h2>
+    <hr>
 </div>
+<div class="om-os-container">
 <form class="form-signin" method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">
     <!-- sikrer at vi sender "ren" data op til databasen -->
-    <div class="form-group" id="logmag">
+    <div class="form-group" class="logmag">
         <label for="mail">Brugernavn:</label>
         <input type="email" class="form-control" name="mail" value="" placeholder="skriv@mail.dk" required> 
     </div>
-    <div class="form-group" id="logmag">
+    <div class="form-group" class="logmag">
         <label for="pwd">Password:</label>
         <input type="password" class="form-control" name="password" id="p1" placeholder="********" required>
     </div>
-    <button id="xwknap" class="btn btn-light" type="submit">Log Ind</button>
+    <button class="btn btn-light" type="submit">Log Ind</button>
     <br>
     <br>
-    <p>Er du ikke registreret som bruger endnu? Tryk her:</p><a href="opretbruger.php" id="xwknap" class="btn btn-secondary" role="button" aria-pressed="true">Opret Bruger</a>
+    <p>Er du ikke registreret som bruger endnu? Tryk her:</p><a href="opretbruger.php" class="btn btn-secondary" role="button" aria-pressed="true">Opret Bruger</a>
 </form>
 <br>
 </div>
-
-
-
 
 <?php
 function get_post($con, $var) {

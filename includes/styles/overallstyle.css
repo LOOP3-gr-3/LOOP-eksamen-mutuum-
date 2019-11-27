@@ -409,7 +409,7 @@ body{               /*Giver body farve - overfladisk*/
 }
     
 /*MAJA og Wasfia*/
-#xw{
+.xw{
     width:5.2em !important;
     height:4.9em !important;
     }
@@ -702,12 +702,6 @@ body {
 /*-----------------------MinProfil--------------------*/
 #retoplysninger, #mineaftaler {
     border-radius: 3em;
-}
-
-/*----------------------Knapper-----------------------MAja og Wasfia----*/
-.xwknap { /*giver en rund border radius*/
-    border-radius: 3em;
-
 }
 
 
