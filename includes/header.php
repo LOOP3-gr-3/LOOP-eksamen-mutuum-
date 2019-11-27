@@ -46,7 +46,7 @@ if(isset($_SESSION['user_id'])){
     
     
 </div>  
-    <a href="index.php"><img src="images/mutuumudenbaggrund.png" id="limg"></a>
+    <a href="index.php"><img src="images/mutuumudenbaggrund.png" class="limg"></a>
 
     <div id="lmenu-bar">
         <!-- skaber funktionen, at man kan klikke-->
