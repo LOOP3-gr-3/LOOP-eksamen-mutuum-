@@ -350,17 +350,17 @@ td, th {
     top:15em;
 }
     
-#billede1{          /*Fortæller om str. ændringer på billeder*/
+.billede1{          /*Fortæller om str. ændringer på billeder*/
     width:500%;
     height:500%;
 }
     
-#billede2{          /* ---------------- || -------------------- */
+.billede2{          /* ---------------- || -------------------- */
     width:600%;
     height:7em !important;      
 }
       
-#limg{              /* Fortæller om den nye placering af header img*/
+.limg{              /* Fortæller om den nye placering af header img*/
     left:5%;
     width:30%;
     height:15%;
@@ -539,7 +539,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     margin-top:2.7%;
 }
 
-#l-billede{         /*holder billeder på pladsen*/
+.l-billede{         /*holder billeder på pladsen*/
     margin:0.25em;
 }
     
@@ -569,7 +569,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     height:150%;
 }
     
-#billede2{          /* ---------------- || -------------------- */
+.billede2{          /* ---------------- || -------------------- */
     height:8.5em !important;      
 }     
     
