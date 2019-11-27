@@ -13,11 +13,7 @@
 <!--Alle figurer er sammensat i word af teamet og slides er fra fra egen hjemmeside-->
 
 
-
-<link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
-
-
-    <div id="site-highlights">
+<div id="site-highlights">
         
 
         <div style="text-align:center">
