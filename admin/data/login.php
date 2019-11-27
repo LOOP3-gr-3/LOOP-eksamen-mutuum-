@@ -1,6 +1,6 @@
 <?php
-$host = "mpw.dk.mysql";
+$host = "localhost";
 $database = "mpw_dk";
-$username = "mpw_dk";
-$password = "loop1234";
+$username = "mutuum";
+$password = "mutuum1";
 ?>
