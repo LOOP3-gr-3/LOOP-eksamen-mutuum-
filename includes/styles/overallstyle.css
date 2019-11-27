@@ -732,7 +732,7 @@ h1{             /*ændringer af overskriften h1*/
 
 /*----------------------OM OS------------------------------------------made by Lasse*/
 
-#om-os-container{   /*container der sørger for rum imellem content og footer*/
+.om-os-container{   /*container der sørger for rum imellem content og footer*/
     position:relative;
     width:100%;
     height:auto;
