@@ -70,7 +70,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
 <div class="om-os-container">
 <!-- Her er formen som skal udfyldes. Fieldset tagget er fordi denne gruppe af data er relaterede. Legend tagget er overskrift for fireldset tagget -->
 <fieldset>
-    <div class="container" class="nheading">
+    <div class="site-highlights">
     <h2><strong>Log ind</strong></h2>
     </div>
     <!-- Under action tagget er der redirectet til en php funktion, som skal sikre at serveren forstår den information der sendes til vores 'users'-tabel -->
@@ -100,7 +100,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
             <label for="p2">Gentag password:</label>
             <input type="password" class="form-control" name="password2" id="p2" placeholder="********" onkeyup='check();' required>
         </div>
-        <button id="xwknap" type="submit" class="btn btn-light" class="logmag">Opret Bruger</button>
+        <button class="xwknap" type="submit" class="btn btn-light" class="logmag">Opret Bruger</button>
         <!-- Her er der tilføjet et stykke tekst der kan skifte farve. Det knytter sig til vores JS funktion som tjekker in real time, om der er tastet ens i de 2 passwordfelter -->
         <span class="passwordtjek"></span>
     </form>

@@ -122,10 +122,7 @@ h3 {
 
 /*__________________________________________________OPRET BRUGER________________________________________Mikkel */
 /* overskrifterne på login og opret bruger */
-.nheading{
-    text-align:center;
-    padding:20px;
-}
+
 
                         /* dette sørger for at teksten, der fortæller om password matcher eller ikke matcher er centeret */
 .passwordtjek{
@@ -137,10 +134,6 @@ input::placeholder{
 
 .logmag{
     margin:15px;
-}
-
-#xwopretbruger {
-    border-radius: 3em;
 }
 
 
@@ -157,7 +150,7 @@ input::placeholder{
 
 /*___________________________________ MIN SIDE ___________________________________ made by Lasse*/
 
-#container-las{             /*Beskriver den container som de 5 andre                                   "under" containere befinder sig i*/
+.container-las{             /*Beskriver den container som de 5 andre                                   "under" containere befinder sig i*/
     position:relative;
     height:35em;
     width:auto;
@@ -168,7 +161,7 @@ input::placeholder{
 
 /*Disse containere er IKKE selve billedet*/
 
-#container1-5{          /*Container 1 - "Min profil" */ 
+.container1-5{          /*Container 1 - "Min profil" */ 
     display:block;
     position:absolute;
     width: 15%;
@@ -177,7 +170,7 @@ input::placeholder{
     margin: 1px;
 }
 
-#container2-5{          /*Container 2 - "Rådgivning" */ 
+.container2-5{          /*Container 2 - "Rådgivning" */ 
     display:block;
     position:absolute;
     width: 15%;
@@ -186,7 +179,7 @@ input::placeholder{
     margin: 1px;
 }
 
-#container3-5{          /*Container 3 - "Match" */
+.container3-5{          /*Container 3 - "Match" */
     display:block;
     position:absolute;
     width: 15%;
@@ -197,7 +190,7 @@ input::placeholder{
     
 }
 
-#container4-5{          /*Container 4 - "Opret kontrakt" */
+.container4-5{          /*Container 4 - "Opret kontrakt" */
     display:block;
     position:absolute;
     width: 15%;
@@ -208,7 +201,7 @@ input::placeholder{
     
 }
 
-#container5-5{          /*Container 5 - "Statistik" */
+.container5-5{          /*Container 5 - "Statistik" */
     display:block;
     position:absolute;
     width: 15%;
@@ -218,7 +211,7 @@ input::placeholder{
     top:16em;
 }
 
-#l-billede{             /*Fortæller noget om billedernes position*/
+.l-billede{             /*Fortæller noget om billedernes position*/
     position:relative;
     margin-left:18%;
     margin-right:18%;
@@ -226,7 +219,7 @@ input::placeholder{
     
 }
 
-#l-billede:hover{       /*Fader billede når der hovers*/
+.l-billede:hover{       /*Fader billede når der hovers*/
     opacity:0.4;
 }
 
@@ -281,12 +274,12 @@ td, th {
 
 
 /*---------------------Billederne til min side------Lasse--------*/
-#billede1{
+.billede1{
     width:200%;
     height:200%;
 
 }
-#billede2{
+.billede2{
     width:200%;
     height:200%;
 }
@@ -307,7 +300,7 @@ td, th {
     background-color:whitesmoke;
     border-radius:0% !important;
 }
-#om-os-container{                       /*Sørger for plads imellem                                              content og footer*/
+.om-os-container{                       /*Sørger for plads imellem                                              content og footer*/
     margin-bottom: 7em !important;
 }
 
@@ -324,7 +317,7 @@ td, th {
 } 
     
 
-#container-las{             /*Ændringer i den overordnede container*/
+.container-las{             /*Ændringer i den overordnede container*/
     margin-bottom:2em !important;
     height:25em !important;
 }
@@ -357,17 +350,17 @@ td, th {
     top:15em;
 }
     
-#billede1{          /*Fortæller om str. ændringer på billeder*/
+.billede1{          /*Fortæller om str. ændringer på billeder*/
     width:500%;
     height:500%;
 }
     
-#billede2{          /* ---------------- || -------------------- */
+.billede2{          /* ---------------- || -------------------- */
     width:600%;
     height:7em !important;      
 }
       
-#limg{              /* Fortæller om den nye placering af header img*/
+.limg{              /* Fortæller om den nye placering af header img*/
     left:5%;
     width:30%;
     height:15%;
@@ -479,17 +472,17 @@ body{               /*Giver body farve - overfladisk*/
     top:24em;
 }
     
-#billede1{          /*Fortæller om str. ændringer på billeder*/
+.billede1{          /*Fortæller om str. ændringer på billeder*/
     width:200%;
     height:200%;
 }
     
-#billede2{           /* ---------------- || -------------------- */
+.billede2{           /* ---------------- || -------------------- */
     width:400%;
     height:11.5em !important;      
 }
 
-#l-billede{         /*holder billeder på pladsen*/
+.l-billede{         /*holder billeder på pladsen*/
     margin-left:auto;
     margin-right:auto;
 }
@@ -546,7 +539,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     margin-top:2.7%;
 }
 
-#l-billede{         /*holder billeder på pladsen*/
+.l-billede{         /*holder billeder på pladsen*/
     margin:0.25em;
 }
     
@@ -571,12 +564,12 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     top:12em;
 }
     
-#billede1{          /*Fortæller om str. ændringer på billeder*/
+.billede1{          /*Fortæller om str. ændringer på billeder*/
     width:150%;
     height:150%;
 }
     
-#billede2{          /* ---------------- || -------------------- */
+.billede2{          /* ---------------- || -------------------- */
     height:8.5em !important;      
 }     
     
@@ -614,7 +607,7 @@ body{           /*body farve hvid, overfladisk*/
     background-color: whitesmoke;
 }
  
-#om-os-container{       /*Sørger for plads imellem content og footer*/
+.om-os-container{       /*Sørger for plads imellem content og footer*/
     margin-bottom:6.5em !important;
 }
     
@@ -624,7 +617,7 @@ body{           /*body farve hvid, overfladisk*/
     margin-top:2.7%;
 }
 
-#container-las{         /*Ændringer i den overordnede container*/
+.container-las{         /*Ændringer i den overordnede container*/
     margin-bottom:10em !important;
 }
 
@@ -712,7 +705,7 @@ body {
 }
 
 /*----------------------Knapper-----------------------MAja og Wasfia----*/
-#xwknap { /*giver en rund border radius*/
+.xwknap { /*giver en rund border radius*/
     border-radius: 3em;
 
 }
@@ -744,7 +737,7 @@ h2{                     /*h2 overskrift ændring*/
 
 
 /*--------------------FORSIDE----------------------------------------made by wasfia og Maja*/
-#site-highlights {                /*site-highlights - der laves streg over og under motto skiltet*/
+.site-highlights {                /*site-highlights - der laves streg over og under motto skiltet*/
     width: 100%;
     margin-bottom: 0.1em;
     text-align: center;
