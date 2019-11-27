@@ -1,32 +1,25 @@
+<!-- Dette er import fra Bootstrap som hjælper os med at skabe en footer, der sidder fast i bunden af vores side-->
 
-  <div class="footer-container">
-    
-    <div class="oplysninger-footer">
-      <div class="las-tekst-hojre">
-          <strong>CVR nr:</strong> 12345678 <br>
-        <strong>Adresse:</strong> Birk Centerpark 15 <br>
-        <strong>E-mail:</strong> mutuum@hotmail.com
-    </div>
-    </div>
-    <div class="oplysninger-footer-2">
- 
-        <a class="las-tekst-venstre" href="./faq.php">FAQ</a> 
-        <a class="las-tekst-venstre" href="./handelsbetingelser.php">&nbsp;&nbsp;&nbsp;Handelsbetingelser </a> 
-        <a class="las-tekst-venstre" href="./kontakt.php" >&nbsp;&nbsp;&nbsp;Kontakt</a> 
-   
+<body class="d-flex flex-column">
+  <div id="page-content">
+    <div class="container text-center">
+      <div class="row justify-content-center">
+        <div class="col-md-7">
+          <h1 class="font-weight-light mt-4 text-white">Sticky Footer using Flexbox</h1>
+          <p class="lead text-white-50">Use just two Bootstrap 4 utility classes and three custom CSS rules and you will have a flexbox enabled sticky footer for your website!</p>
+        </div>
       </div>
-    <div class="billede-footer">
-        <?php
-            if(isset($_SESSION['user_id'])) {
-            echo '<a href="minside.php"><img class="billedefoot" src="images/B4.png"></a>';
-            } else
-            echo '<a href="opretbruger.php"><img class="billedefoot" src="images/B3.png"></a>';
-                
-        
-          ?>
     </div>
-    
-</div>
+  </div>
+  <footer id="sticky-footer" class="py-4 bg-dark text-white-50">
+    <div class="container text-left">
+      <p><small>CVR nr: 12345678</small></p>
+      <p><small>Adresse: Birk Centerpark 15</small></p>
+      <p><small>E-mail: mutuum@hotmail.com</small></p>
+    </div>
+   
+  </footer>
+</body>
 
 </body>
 </html>
