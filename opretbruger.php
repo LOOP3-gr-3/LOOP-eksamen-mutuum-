@@ -67,7 +67,7 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
 }
 }
 ?>
-<div id="om-os-container">
+<div class="om-os-container">
 <!-- Her er formen som skal udfyldes. Fieldset tagget er fordi denne gruppe af data er relaterede. Legend tagget er overskrift for fireldset tagget -->
 <fieldset>
     <div class="container" id="nheading">
