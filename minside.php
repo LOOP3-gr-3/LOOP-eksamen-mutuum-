@@ -30,7 +30,7 @@ if(!isset($_SESSION['user_id'])) {
 <div class="container-las">
     <div class="container1-5">
         <div id="l-billede">
-            <a href="minprofil.php"><img id="billede1" src="images/profilny.png"></a>
+            <a href="minprofil.php"><img class="billede1" src="images/profilny.png"></a>
         </div>
         
         

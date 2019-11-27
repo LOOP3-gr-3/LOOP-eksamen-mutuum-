@@ -472,17 +472,17 @@ body{               /*Giver body farve - overfladisk*/
     top:24em;
 }
     
-#billede1{          /*Fortæller om str. ændringer på billeder*/
+.billede1{          /*Fortæller om str. ændringer på billeder*/
     width:200%;
     height:200%;
 }
     
-#billede2{           /* ---------------- || -------------------- */
+.billede2{           /* ---------------- || -------------------- */
     width:400%;
     height:11.5em !important;      
 }
 
-#l-billede{         /*holder billeder på pladsen*/
+.l-billede{         /*holder billeder på pladsen*/
     margin-left:auto;
     margin-right:auto;
 }
@@ -564,7 +564,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     top:12em;
 }
     
-#billede1{          /*Fortæller om str. ændringer på billeder*/
+.billede1{          /*Fortæller om str. ændringer på billeder*/
     width:150%;
     height:150%;
 }
