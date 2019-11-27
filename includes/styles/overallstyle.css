@@ -219,7 +219,7 @@ input::placeholder{
     
 }
 
-#l-billede:hover{       /*Fader billede når der hovers*/
+.l-billede:hover{       /*Fader billede når der hovers*/
     opacity:0.4;
 }
 
