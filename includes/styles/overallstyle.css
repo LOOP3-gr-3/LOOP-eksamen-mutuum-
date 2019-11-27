@@ -327,25 +327,25 @@ td, th {
     left:1.2em;
 }
 
-#container1-5{      /*Ændringer af containers placering m. billede*/
+.container1-5{      /*Ændringer af containers placering m. billede*/
     left:-5% !important;
 }
     
-#container2-5{      /* ---------------- || -------------------- */
+.container2-5{      /* ---------------- || -------------------- */
     left:50%;
 }
     
-#container3-5{      /* ---------------- || -------------------- */
+.container3-5{      /* ---------------- || -------------------- */
     left:-5%;
     top:7.5em;
 }
     
-#container4-5{      /* ---------------- || -------------------- */
+.container4-5{      /* ---------------- || -------------------- */
     left:50%;
     top:7.5em;
 }
     
-#container5-5{      /* ---------------- || -------------------- */
+.container5-5{      /* ---------------- || -------------------- */
     left:18%;
     top:15em;
 }
