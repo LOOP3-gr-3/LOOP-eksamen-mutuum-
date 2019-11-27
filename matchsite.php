@@ -12,12 +12,12 @@ require_once('includes/header.php');
 ?>
 
 <!-- Her sættes headeren på siden -->
-<div id="site'highlights" style="text-align:center">
+<div class="site-highlights">
     <hr>
     <h1><strong>Matchsite</strong></h1>
     <hr>
 </div>
-<div id="om-os-container">
+<div class="om-os-container">
     <div>
         <h3 style=text-align:center><strong>Kontraktanmodninger sendt til DIG</strong></h3>
     </div>

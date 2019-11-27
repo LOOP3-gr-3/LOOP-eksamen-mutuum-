@@ -5,7 +5,7 @@ if (isset($_SESSION['user_id'])) {
 ?>
 
 <div class="container">
-    <p class='intro winter t15'>Du er nu logget ud. <I><a href="index.php">Klik her og til forsiden.</a></I></p>
+    <p>Du er nu logget ud. <I><a href="index.php">Klik her og til forsiden.</a></I></p>
 </div>
 
 <?php
