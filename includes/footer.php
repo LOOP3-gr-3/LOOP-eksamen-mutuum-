@@ -19,13 +19,13 @@
 <h5 class="widget-title">Genveje<span></span></h5>
 <ul class="thumbnail-widget">
 <li>
-<div class="thumb-content"><a href="#.">Handelsbetingelser</a></div>	
+<div class="thumb-content"><a href="handelsbetingelser.php">Handelsbetingelser</a></div>	
 </li>
 <li>
-<div class="thumb-content"><a href="#.">Kontaktinformationer</a></div>	
+<div class="thumb-content"><a href="kontakt.php">Kontaktinformationer</a></div>	
 </li>
 <li>
-<div class="thumb-content"><a href="#.">FAQ</a></div>	
+<div class="thumb-content"><a href="faq.php">FAQ</a></div>	
 </li>
 <li>
 </ul>
@@ -37,7 +37,7 @@
 <div class="widget no-box">
 <h5 class="widget-title">Kom i gang<span></span></h5>
 <p>Få adgang til hele Mutuum</p>
-<a class="btn" href="#." target="_blank">Opret dig nu!</a>
+<a class="btn" href="opretbruger.php" target="_blank">Opret dig nu!</a>
 </div>
 </div>
 
