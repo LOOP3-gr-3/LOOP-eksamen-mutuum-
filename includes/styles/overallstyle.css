@@ -760,6 +760,10 @@ transition: all 250ms ease-in-out 0s;
     padding: 20px;
 }
 
+.wbillede1 {
+    width:9em;
+}
+
 
 /*-----------------------MinProfil--------------------*/
 #retoplysninger, #mineaftaler {
