@@ -51,14 +51,14 @@ $user_id = $_SESSION['user_id'];
 <br> 
 <h5>Kontrakter klar til udlån</h5>
 <!--Her samles alt der skal i tabellen i en samlet container med ID-->
-<container id="xkontraktertiludlån"> 
+<container> 
 
 <!-- #nbsp er skrevet ind for boxen bliver fixeret til at være den givne størrelse uden at skulle benytte row and colums-->
         
 <table>
     <tr>
-        <th id="Xdato">Dato for oprettelse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        <th id="Xbeløb">Beløb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Dato for oprettelse&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Beløb&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
     </tr>
     <!-- nedenstående er felterne der udfyldes når man indgår en aftale, så den bliver en del af historikken. Se forhåndsvisning for at se hvordan det hænger sammen. td = indhold til kolonner, th overskrift til kolonner og tr angiver ny "linje" -->
         <tr> 
@@ -85,13 +85,13 @@ $query2 = "SELECT * FROM kontrakt WHERE laangiver_user_id ='$user_id'";
 <br>
 <h5>Oprettede kontrakter</h5>
 <!--Her samles alt der skal i tabellen i en samlet container med ID-->
-<container id="xoprettedekontrakter"> 
+<container> 
 
 <!-- #nbsp er skrevet ind for boxen bliver fixeret til at være den givne størrelse uden at skulle benytte row and colums-->
 <table>
     <tr>
-        <th id="Xdato">Dato for oprettelse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
-        <th id="Xbeløb">Beløb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Dato for oprettelse &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
+        <th>Beløb &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</th>
     </tr>
     <!-- nedenstående er felterne der udfyldes når man indgår en aftale, så den bliver en del af historikken. Se forhåndsvisning for at se hvordan det hænger sammen. td = indhold til kolonner, th overskrift til kolonner og tr angiver ny "linje" -->
         <tr> 
@@ -122,14 +122,14 @@ if($result3){
 ?>
 
 <!--Her samles alt der skal i tabellen i en samlet container med ID´et "aftalehistorik"-->
-<container id="aftalehistorik"> 
+<container> 
 
 <!-- #nbsp er skrevet ind for boxen bliver fixeret til at være den givne størrelse uden at skulle benytte row and colums-->
 <table>
     <tr>
-        <th id="Xdato">Dato &nbsp;&nbsp;&nbsp; </th>
-        <th id="Xmail">Mail &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
-        <th id="Xbeløb">Beløb &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </th>
+        <th>Dato &nbsp;&nbsp;&nbsp; </th>
+        <th>Mail &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </th>
+        <th>Beløb &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; </th>
     </tr>
     <!-- nedenstående er felterne der udfyldes når man indgår en aftale, så den bliver en del af historikken. Se forhåndsvisning for at se hvordan det hænger sammen. td = indhold til kolonner, th overskrift til kolonner og tr angiver ny "linje" -->
         <tr>

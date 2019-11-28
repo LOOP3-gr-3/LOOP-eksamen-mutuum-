@@ -471,7 +471,7 @@ body{               /*Giver body farve - overfladisk*/
     top:12em;
 }
     
-container4-5{       /* ---------------- || -------------------- */
+.container4-5{       /* ---------------- || -------------------- */
     left:52%;
     top:12em;
 }
@@ -799,10 +799,6 @@ h2{                     /*h2 overskrift ændring*/
     width: 100%;
     margin-bottom: 0.1em;
     text-align: center;
-}
-
-.hr{
-    clear: left;
 }
 
 #xwlet {    /*teskt beskrivelse*/
