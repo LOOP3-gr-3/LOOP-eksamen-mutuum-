@@ -27,7 +27,8 @@ body{
     border-radius: 5em;   
     transition:0.7s ease; /*hastigheden fra burger til kryds*/
     right: 15.5%; 
-    top: 2em;
+    border-style:dashed;
+    top:2em !important;
     }
 
 #lbar1{                 /*giver toppen af burgeren*/
@@ -232,9 +233,9 @@ input::placeholder{
 #llogin{                /*Fortæller om LOG IND knaps placering, position, rammen omkring og margin fra top og bund af jumbotron*/
     position:relative; 
     width: 25%;
-    left:45%;   
+    left:65%;   
     opacity:0.6;
-    margin-top:5%;
+    margin-top:2%;
     margin-bottom: 2%;
     text-align:center;
     border:0.09em solid black;
@@ -297,7 +298,7 @@ td, th {
 /*-------------------------------------@MEDIA QUERYS-------------------------------------------- made by Lasse*/
 
 /*Vi starter med en Media Screen på en iPhone 5/5s*/
-@media screen and (min-width: 300px)and (max-width:759px){
+@media screen and (min-width: 300px)and (max-width:767px){
 
 #jumbotron{                     
     background-color:whitesmoke;
@@ -316,7 +317,7 @@ td, th {
     border:0.09em solid black;
     border-radius:20px;
     text-decoration: none;
-    top:-0.15em;
+    top:1.3em;
 } 
     
 
@@ -452,8 +453,9 @@ body{               /*Giver body farve - overfladisk*/
     width:8em;
 }
     
-.llogin{            /*Login knap position ændring*/
-    left:60%;     
+#llogin{            /*Login knap position ændring*/
+    left:60%;
+    top:0.8em; 
 }
     
 .container1-5{      /*Ændringer af containers placering m. billede*/
@@ -540,10 +542,10 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     width: 7em;
 }
     
-.llogin{            /*Login knap position ændring*/
+#llogin{            /*Login knap position ændring*/
     width:15%;
-    left:75%;   
-    margin-top:2.7%;
+    left:73%;   
+    top:0.6em;
 }
 
 .l-billede{         /*holder billeder på pladsen*/
@@ -618,7 +620,7 @@ body{           /*body farve hvid, overfladisk*/
     margin-bottom:6.5em !important;
 }
     
-.llogin{                /*Formindske login-knap og størrelse*/
+#llogin{                /*Formindske login-knap og størrelse*/
     width:15%;
     left:75%;   
     margin-top:2.7%;
