@@ -6,6 +6,12 @@
 
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 
+<div class="site-highlights">
+    <hr>
+        <h1><strong>Om os</strong></h1>
+    <hr>
+</div>
+
 <div id="om-os-container">
 <!-- Dette er overskriften for dette indhold -->
 <h3><strong>HVEM ER VI?</strong></h3>                                
@@ -28,6 +34,14 @@
     <li>Kontrakter der tilgodeser både låntager og långiver</li>
     <li>Du sætter selv reglerne for dine penge</li>
 </ul>
+<div class="site-highlights">
+    <hr>
+        <h1><strong>Kontakt os</strong></h1>
+    <hr> <br>
+</div>
+    <strong>CVR nr:</strong> 12345678 <br>
+    <strong>Adresse:</strong> Birk Centerpark 15 <br>
+    <strong>E-mail:</strong> mutuum@hotmail.com <br> <br> <br>
 </div>
 
 <?php require_once('includes/footer.php'); ?>
