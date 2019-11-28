@@ -31,7 +31,7 @@ if(isset($_POST['mail']) && isset($_POST['password'])) { /* Her tjekker vi for a
             }
             if ($token == $password) {
                 $_SESSION['user_id'] = $user_id;
-                header('Location: KFUM.php');
+                header('Location: minside.php');
             }
         }
     }

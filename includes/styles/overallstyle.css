@@ -799,10 +799,6 @@ h2{                     /*h2 overskrift ændring*/
     text-align: center;
 }
 
-.hr{
-    clear: left;
-}
-
 #xwlet {    /*teskt beskrivelse*/
         font-size: 1.5em;
     }
