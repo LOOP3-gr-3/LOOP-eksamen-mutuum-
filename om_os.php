@@ -10,9 +10,9 @@
     <hr>
         <h1><strong>Om os</strong></h1>
     <hr>
-</div>
 
-<div id="om-os-container">
+
+<div id="om-os-container"> 
 <!-- Dette er overskriften for dette indhold -->
 <h3><strong>HVEM ER VI?</strong></h3>                                
 
@@ -20,28 +20,28 @@
 </p>
 <!-- her laves der er en unummeret liste over teammedlemmerne /ul -->
     <ul>   
-        <li>Mette Weyergang</li>
-        <li>Maja Pallesen</li>
-        <li>Wasfia Hashemi</li>
-        <li>Mikkel Niklassen</li>
-        <li>Lasse Hvisthule</li>
+        <p>Mette Weyergang</p>
+        <p>Maja Pallesen</p>
+        <p>Wasfia Hashemi</p>
+        <p>Mikkel Niklassen</p>
+        <p>Lasse Hvisthule</p>
     </ul>
 
 <h3><strong>HVORFOR VÆLGE OS?</strong></h3>
 <ul>
-    <li>Enkelte, overskuelige og juridiskbindende kontrakter</li>
-    <li>Slip for at sende en reminder eller komme i uønskede situationer med nære relationer</li>
-    <li>Kontrakter der tilgodeser både låntager og långiver</li>
-    <li>Du sætter selv reglerne for dine penge</li>
-</ul>
-<div class="site-highlights">
+    <p>Enkelte, overskuelige og juridiskbindende kontrakter</p>
+    <p>Slip for at sende en reminder eller komme i uønskede situationer med nære relationer</p>
+    <p>Kontrakter der tilgodeser både låntager og långiver</p>
+    <p>Du sætter selv reglerne for dine penge</p>
+</ul> <br>
     <hr>
         <h1><strong>Kontakt os</strong></h1>
     <hr> <br>
-</div>
     <strong>CVR nr:</strong> 12345678 <br>
     <strong>Adresse:</strong> Birk Centerpark 15 <br>
     <strong>E-mail:</strong> mutuum@hotmail.com <br> <br> <br>
+    <img class="wbillede1" src="images/Udklip.PNG">
+</div>
 </div>
 
 <?php require_once('includes/footer.php'); ?>
