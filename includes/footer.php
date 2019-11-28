@@ -37,7 +37,7 @@
 <div class="widget no-box">
 <h5 class="widget-title">Kom i gang<span></span></h5>
 <p>Få adgang til hele Mutuum</p>
-<a class="btn" href="opretbruger.php" target="_blank">Opret dig nu!</a>
+<a id="knap" class="btn" href="opretbruger.php" target="_blank">Opret dig nu!</a>
 </div>
 </div>
 

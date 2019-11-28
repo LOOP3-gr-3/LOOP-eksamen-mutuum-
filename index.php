@@ -6,7 +6,7 @@
 <!--Alle figurer er sammensat i word af teamet og slides er fra fra egen hjemmeside-->
 
 <div class="site-highlights">
-    <hr>
+    <hr>    
     <h1><strong><i>HJÆLP DINE NÆRMESTE ELLER FJERNESTE</i></strong></h1>
     <hr>
 
