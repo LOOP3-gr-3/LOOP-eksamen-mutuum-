@@ -1,6 +1,6 @@
 <!-- her henter jeg headeren ned -->
 <?php
-    $page = ('Forside');
+    $page = ('Handelsbetingelser');
     require_once('includes/header.php');
 ?>
 
