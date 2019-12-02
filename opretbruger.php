@@ -67,13 +67,14 @@ if(isset($_POST['fornavn']) && isset($_POST['efternavn']) && isset($_POST['mail'
 }
 }
 ?>
-<div class="om-os-container">
+
 <!-- Her er formen som skal udfyldes. Fieldset tagget er fordi denne gruppe af data er relaterede. Legend tagget er overskrift for fireldset tagget -->
 <fieldset>
     <div class="site-highlights">
-    <h2><strong>Log ind</strong></h2>
+    <h1><strong>Log ind</strong></h1>
     </div>
     <!-- Under action tagget er der redirectet til en php funktion, som skal sikre at serveren forstår den information der sendes til vores 'users'-tabel -->
+    <div class="om-os-container">
     <form class="needs-validation" novalidate method="post" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>">
         <div class="form-group" class="logmag">
             <label for="fornavn">Fornavn:</label>
