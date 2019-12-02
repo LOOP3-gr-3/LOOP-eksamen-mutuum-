@@ -47,7 +47,7 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
     
     foreach ($errors as $error) {
         echo "<script>alert('" . $error . "');
-    window.location.href='upload_1.php';
+    window.location.href='kontrakt.php';
     </script>";
     die();    
                 }
