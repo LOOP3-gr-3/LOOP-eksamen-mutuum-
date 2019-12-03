@@ -59,7 +59,7 @@
             </div>
         </div>
     </div> <!-- Her afsluttes site-highlights, så alle tekster og alt contekst forbliver synlig og ligger rigtig ift. footer -->
-
+</div>
 
 <?php 
     require_once('includes/footer.php');
