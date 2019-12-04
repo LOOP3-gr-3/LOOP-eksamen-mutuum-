@@ -8,12 +8,13 @@ require_once('includes/header.php');
 
     <!-- Jumbotron Header -->
 <header class="jumbotron my-4">
-    
-    <img id="logoforside" src="images/logo.png"> 
 
 <!--For nu er styler jeg inde på siden så der kan holdes overblik med det-->
-    
+        <img id="logoforside" src="images/logo.png"> 
 <style>
+    header {
+        background-color:white;
+    }
     #logoforside {
        width: 30%;
         height: auto;

@@ -18,7 +18,7 @@ if(!isset($_SESSION['user_id'])) {
 <div class="om-os-container">
     <div class="row mb-4">
         <div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto d-block">
-            <a href="minprofil.php"><img class="img-fluid" src="images/profilny.png"></a>
+            <a href="minprofil.php"><img class="img-fluid minsidefigur" src="images/profilny.png"></a>
         </div>
 
         <div class="col-6 col-sm-6 col-md-3 col-lg-3 mx-auto d-block">
