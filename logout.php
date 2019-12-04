@@ -2,13 +2,10 @@
 require_once('includes/header.php');
 session_destroy();
 if (isset($_SESSION['user_id'])) {
-?>
-
-<div class="container">
-    <p>Du er nu logget ud. <I><a href="maja-index.php">Klik her og til forsiden.</a></I></p>
-</div>
-
-<?php
+        echo '<script>alert("Du er nu logget ud af Mutuum. Ha en rigtig dejlig dag!");';
+        echo 'window.location.href="maja-index.php";';
+        echo '</script>' ;
+        die();
 }
-require_once('includes/footer.php');
 ?>
+
