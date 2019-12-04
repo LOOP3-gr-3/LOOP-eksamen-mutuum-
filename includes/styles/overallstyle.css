@@ -386,12 +386,18 @@ h2{                     /*h2 overskrift ændring*/
 /*--------------------FORSIDE----------------------------------------Maja*/
 #baggrundpaaforside {
     background-color: whitesmoke;
+    margin-top: none;
+    margin-bottom: none;
 }
 
 #logoforside {
-       width: 30%;
+       width: 25%;
         height: auto;
     }
+.forsidesymbol {
+    width: 25%;
+    height: auto;
+}
 #contact {
     background-color: whitesmoke;
 }

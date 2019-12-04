@@ -11,25 +11,24 @@ require_once('includes/header.php');
 
 <!--For nu er styler jeg inde på siden så der kan holdes overblik med det-->
         <img id="logoforside" src="images/logo.png">     
-      <p>Mutuum er et sted for alle. Der kan udlånes og lånes til hvem som helst eller til bestemt personer. <br><br>
+      <p>Mutuum er et sted for alle. Der kan udlånes og lånes til hvem som helst eller til bestemt personer. <br>
     Siden er dannet på baggrund af sikkerhed og muligheden for at få hjælp og planlægge din økonomiske situationer</p>
       <a href="opretbruger.php" class="btn btn-primary btn-lg">OPRET BRUGER</a>
 </header>
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
-    <h2>FORDELE VED MUTTUM</h2>
   <div class="row slideanim">
       
     <div class="col-sm-4">
-        <img id="logoforside" src="images/lock.PNG">
+        <img class="forsidesymbol" src="images/lock.PNG">
       <h4>SIKKERHED</h4>
       <p class="card-text">Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
             <p>Udfyld ansøgning til kreditgodkendelse - godkend den endelige rente og lånebetingelser. Alt står med stort, ingen skjulte gebyrer</p>
     </div>
       
     <div class="col-sm-4">
-          <img id="logoforside" src="images/checkbox.PNG">
+          <img class="forsidesymbol" src="images/checkbox.PNG">
             <h4>BETINGELSER</h4>
                 <ul id="forsideliste">
                     <li>Du skal være fyldt 18 år</li>
@@ -38,7 +37,7 @@ require_once('includes/header.php');
                 </ul> 
     </div>
     <div class="col-sm-4">
-        <img id="logoforside" src="images/l%C3%A5ntager.PNG">
+        <img class="forsidesymbol" src="images/l%C3%A5ntager.PNG">
         <h4>LÅNGIVER eller LÅNTAGER</h4>
              <p class="card-text">Start din investering eller dit lån med kun ét klik. Med Mutuum behøver du hverken være økonom eller millionær for at kunne drage nytte af hjemmesiden.</p>
     </div>
