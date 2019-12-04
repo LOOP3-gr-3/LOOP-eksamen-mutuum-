@@ -68,3 +68,7 @@ require_once('includes/header.php');
 </body>
 </body>
 </html>
+<?php
+$page = ('Forside');
+require_once('includes/footer.php');
+?>
