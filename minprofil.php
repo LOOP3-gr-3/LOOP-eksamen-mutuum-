@@ -29,7 +29,7 @@ $row = mysqli_num_rows($result);
 
 if ($row > 0) {
     while($row = mysqli_fetch_assoc($result)) {
-        echo "Brugernavn: " . $row['mail'] . "&nbsp;Fornavn: " . $row['fornavn'] . "&nbsp;Efternavn: " . $row['efternavn'] . "&nbsp;Telefon nr.: " . $row['mobil'] . "<br>";
+        echo "&nbsp;<strong>Brugernavn:</strong> " . $row['mail'] . "<br>&nbsp;<strong>Fornavn:</strong> " . $row['fornavn'] . "<br>&nbsp;<strong>Efternavn:</strong> " . $row['efternavn'] . "<br>&nbsp;<strong>Telefon nr.:</strong> " . $row['mobil'] . "<br><br>";
     
         } 
     } else {
