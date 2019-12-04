@@ -16,13 +16,13 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="well">
-       <p> <strong>MUTUUM</strong> startede på baggrund af et ønske fra Morten Refsgaard, Jens Eriksen og Sander Dyrvig om at hjælpe dem, der havde brug for lidt ekstra penge til indskud til diverse efter nødssituationer - men også ønsket om at gøre det lettere for to bekendte at låne penge til hinanden og samtidig sikre, at den økonomiske situation ikke kommer mellem dem vha. af en juridisk kontrakt, der skal holde begge parter ansvarlige for aftalen. <br> Efterfølgende er hele designet, altså forretningmodellen og det videre koncept udarbejdet af en gruppe 3. semester studerende fra Aarhus Universitet.</p>
+       <p> <strong>MUTUUM</strong> startede på baggrund af et ønske fra Morten <br> Refsgaard, Jens Eriksen og Sander Dyrvig om at hjælpe dem,<br> der havde brug for lidt ekstra penge til indskud til diverse efter<br> nødssituationer - men også ønsket om at gøre det lettere for to<br> bekendte at låne penge til hinanden og samtidig sikre, at den<br> økonomiske situation ikke kommer mellem dem vha. af en juridisk<br> kontrakt, der skal holde begge parter ansvarlige for aftalen.<br> <br> Efterfølgende er hele designet, altså forretningmodellen og det<br> videre koncept udarbejdet af en gruppe 3. semester studerende<br> fra Aarhus Universitet.</p>
       </div>
     <br>
       <div class="well">
-       <p><strong>Hvorfor vælge os?</strong> <br> Enkelte, overskuelige og juridiskbindende kontrakter</p>
-        <p>Slip for at sende en reminder eller komme i uønskede situationer med nære relationer</p>
-        <p>Kontrakter der tilgodeser både låntager og långiver</p>
+       <h2><strong>Hvorfor vælge os?</strong></h2> <p> Enkelte, overskuelige og juridiskbindende kontrakter<br><br></p>
+        <p>Slip for at sende en reminder eller komme i uønskede situationer med nære relationer<br><br></p>
+        <p>Kontrakter der tilgodeser både låntager og långiver<br><br></p>
         <p>Du sætter selv reglerne for dine penge</p>
       </div>
     </div>
@@ -49,7 +49,6 @@
 <h3><strong>KONTAKT OS</strong></h3>
 <hr>
 </div>
-<div class="om-os-container">
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <div class="row">
@@ -76,7 +75,6 @@
       </div>
     </div>
   </div>
-</div>
 </div>
 <?php
 require_once('includes/footer.php');
