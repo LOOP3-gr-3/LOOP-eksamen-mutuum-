@@ -1,8 +1,6 @@
-<!-- her henter jeg headeren ind og kontraktdatabasen -->
 <?php 
     $page = ('Oprettelse af kontrakt');
-/*her henter jeg headeren ned*/
-    require_once('includes/header.php');
+    require_once('includes/header.php');/*-- her henter jeg headeren ind og kontraktdatabasen */
     if (isset($_SESSION['user_id'])) {
         header('location: kontrakt.php');
 }
@@ -21,7 +19,6 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
     $laantager_underskrift_id = $_POST['laantager_underskrift_id'];
     $reg_underskrift_1 = $_POST['reg_underskrift2'];
     $betalings_status_id = $_POST['betalings_status_id'];
-    
     
     $laangiver_user_id = get_post['laangiver_user_id'];
     $laantager_user_id = $_POST['laangiver_user_id'];
