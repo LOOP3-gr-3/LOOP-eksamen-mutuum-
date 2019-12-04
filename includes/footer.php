@@ -1,8 +1,7 @@
 <footer class="footer">
   <div class="footer-left col-md-4 col-sm-6">
     <p class="about">
-      <span> About the company</span> Ut congue augue non tellus bibendum, in varius tellus condimentum. In scelerisque nibh tortor, sed rhoncus odio condimentum in. Sed sed est ut sapien ultrices eleifend. Integer tellus est, vehicula eu lectus tincidunt,
-      ultricies feugiat leo. Suspendisse tellus elit, pharetra in hendrerit ut, aliquam quis augue. Nam ut nibh mollis, tristique ante sed, viverra massa.
+      <span> About the company</span> Der var engang 5 studerende på Aarhus BSS som ønskede, at skabe bedre levevilkår for alle verdens mennesker. Der gik ikke lang tid før de havde fået ideen om Mutuum og alle verdens penge blev ligeligt fordelt mellem rig og fattig. Verden blev et meget bedre sted og alle leve lykkeligt til deres dages ende. 
     </p>
    
   </div>

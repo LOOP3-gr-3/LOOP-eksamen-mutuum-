@@ -17,18 +17,11 @@ body{
 }
 
 
-/*__________________________________________________Alle overskrifter________________________________________Maja og Lasse*/
+/*__________________________________________________Alle overskrifter________________________________________Maja*/
 
 h1 {
     font-size: 1.5em;
     font-family: arial;
-    color: forestgreen;
-}
-
-h3 {
-    font-size: 1.2em;
-    font-family: arial;
-    color:darkgreen;
 }
 
 
@@ -58,7 +51,9 @@ input::placeholder{
     height: auto;
     width: auto;
 }
-
+.minsidefigur{
+    margin-bottom: 15%;
+}
 
 /*------------------------------------ mine aftaler ----------------------------Maja-*/
 #Xlup  { /*sørger for at billede med luppen ikke bliver overdrevet stor*/
