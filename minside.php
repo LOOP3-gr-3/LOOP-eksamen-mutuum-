@@ -22,7 +22,7 @@ if(!isset($_SESSION['user_id'])) {
 
 <div class="site-highlights" style="text-align:center">
     <hr>
-        <h1><strong>Min side</strong></h1>
+        <h1><strong>Min side</strong></h1>  
     <hr>
 </div>
 

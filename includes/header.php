@@ -48,6 +48,11 @@ require_once('conn.php')
             <a class="nav-link" href="maja-index.php">Home
               <span class="sr-only">(current)</span>
             </a>
+            </li><li class="nav-item">
+            <a class="nav-link" href="login.php">Login</a>
+          </li>
+            <li class="nav-item">
+            <a class="nav-link" href="opretbruger.php">Opret bruger</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="om_os.php">Om os</a>
@@ -55,8 +60,7 @@ require_once('conn.php')
           <li class="nav-item">
             <a class="nav-link" href="kontakt.php">Kontakt</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="handelsbetingelser.php    ">Handesbetingelser</a>
+         
           </li>
         </ul>
       </div>
