@@ -598,20 +598,10 @@ h2{                     /*h2 overskrift ændring*/
 
 
 /*--------------------FORSIDE----------------------------------------made by wasfia og Maja*/
-.site-highlights {                /*site-highlights - der laves streg over og under motto skiltet*/
-    width: 100%;
-    margin-bottom: 0.1em;
-    text-align: center;
+#card-img-top {
+    width: 5%;
+    height: auto;
 }
-
-#xwlet {    /*teskt beskrivelse*/
-        font-size: 1.5em;
-    }
-    
-.xw {
-        width: 20%;
-        height:auto;
-    }
 
 
 
