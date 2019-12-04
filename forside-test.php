@@ -1,23 +1,13 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <!-- Theme Made By www.w3schools.com -->
-  <title>Bootstrap Theme Company Page</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-
+<?php
+require_once("includes/header.php");
+?>
 <style>
 
 #logoforside {
        width: 30%;
         height: auto;
     }
-  body {
+  #myPage {
     font: 400 15px Lato, sans-serif;
     line-height: 1.8;
     color: #818181;
@@ -115,8 +105,8 @@
 }
   }
   </style>
-</head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<div id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
 <div class="jumbotron text-center">
   <h1>MUTUUM</h1> 
@@ -205,6 +195,7 @@
       </div>
     </div>
   </div>
+</div>
 </div>
 
 <script>
