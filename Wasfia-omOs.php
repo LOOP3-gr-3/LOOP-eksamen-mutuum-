@@ -5,22 +5,12 @@
 ?>
 
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
-
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <title>Bootstrap Example</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  
-  
-<div class="container text-center">
+<div class="site-highlights">
 <hr>
   <h3><strong>HVEM ER VI?</strong></h3>
 <hr>
+</div>
+<div class="om-os-container">
   <div class="row">
     <div class="col-sm-4">
       <div class="well">
@@ -50,9 +40,13 @@
       </div>
     </div>
   </div>
+</div>
+<div class="site-highlights">
 <hr>
 <h3><strong>KONTAKT OS</strong></h3>
 <hr>
+</div>
+<div class="om-os-container">
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <div class="row">
@@ -74,7 +68,7 @@
       <textarea class="form-control" id="comments" name="comments" placeholder="Besked" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <a href="index.php"><button class="btn btn-default pull-right" type="submit">Send</button></a>
         </div>
       </div>
     </div>

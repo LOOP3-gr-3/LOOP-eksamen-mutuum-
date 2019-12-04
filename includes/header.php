@@ -19,6 +19,8 @@ if (isset($_SESSION['user_id']))
 
         <link rel="icon" type="image/x-icon" href="images/mutuum.ico">
         <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
         <!-- Custom styles for this template -->
         <link href="css/heroic-features.css" rel="stylesheet">
