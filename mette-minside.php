@@ -35,7 +35,7 @@ require_once('includes/header.php');
         </div>
     </div>
     <div class="container-fluid">
-        <a href="KFUM.php"><img id="KFUMfixed" src="images/hjaelpknap.png"></a>
+        <a href="KFUM.php"><img id="KFUMfixed" src="images/hjaelpknaplille.png"></a>
     </div>
 </div>
 
