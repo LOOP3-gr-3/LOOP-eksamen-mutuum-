@@ -19,7 +19,7 @@ require_once('includes/header.php');
         <img id="logoforside" src="images/logo.png">     
       <p>Mutuum er et sted for alle. Der kan udlånes og lånes til hvem som helst eller til bestemt personer. <br><br>
     Siden er dannet på baggrund af sikkerhed og muligheden for at få hjælp og planlægge din økonomiske situationer</p>
-      <a href="opretbruger.php" class="btn btn-primary btn-lg">OPRET BRUGER</a>
+      <a href="opretbruger.php" class="btn btn-default btn-lg">OPRET BRUGER</a>
 </header>
 
 <!-- Container (Services Section) -->
@@ -84,23 +84,23 @@ require_once('includes/header.php');
   </div>
  </div>
 </div>
-
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h1 class="text-center">Kontakt os på følgende informationer</h1>
+  <h1 class="text-center">Kontakt</h1>
   <div class="row">
     <div class="col-sm-5">
+      <p>Kontak os på følgende informationer</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>Birk Centerpark 15, 7400 Herning</p>
       <p><span class="glyphicon glyphicon-phone"></span> +45 12345678</p>
       <p><span class="glyphicon glyphicon-envelope"></span> mutuum@hotmail.com</p>
     </div>
     
-       <div class="centrerknap"></div> <button data-toggle="collapse" data-target="#demo" id="forsidekontakformular">Åben kontaktformular</button> </div>     
+        <button data-toggle="collapse" data-target="#demo" class="btn btn-default btn-lg">Åben kontaktformular</button>      
             <div id="demo" class="collapse">
                 <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
-         <br><br> <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
         </div>
         <div class="col-sm-6 form-group">
           <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
