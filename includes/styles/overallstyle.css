@@ -9,7 +9,6 @@ body{
     position:relative;
     width:100%;
     height:auto;
-    margin-bottom:7em;
     padding: 1.25em;
 }
 
@@ -352,10 +351,10 @@ h1{             /*ændringer af overskriften h1*/
 }
 
 
-/*----------------------OM OS------------------------------------------made by Lasse*/
+/*----------------------OM OS------------------------------------------made by Wasfia*/
 
-.wbillede1 {
-    width:9em;
+.row {
+    text-align: center;
 }
 
 
