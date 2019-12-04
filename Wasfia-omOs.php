@@ -24,7 +24,7 @@
   <div class="row">
     <div class="col-sm-4">
       <div class="well">
-       <p>MUTUUM startede på baggrund af et ønske - fra Morten Refsgaard, Jens Eriksen og Sander Dyrvig, om at hjælpe dem, der havde brug for lidt ekstra penge til indskud til diverse efter nødssituationer. Men også ønsket om at gøre det lettere for to bekendte at låne penge til hinanden, men sikre at den økonomiske situation ikke kommer mellem dem vha. af en juridisk kontrakt, der skal holde begge parter ansvarlige for aftalen. <br> Efterfølgende er hele designet, forretningmodellen og det videre koncept udarbejdet af en gruppe 3. semester studerende fra Aarhus Universitet.</p>
+       <p> <strong>MUTUUM</strong> startede på baggrund af et ønske - fra Morten Refsgaard, Jens Eriksen og Sander Dyrvig, om at hjælpe dem, der havde brug for lidt ekstra penge til indskud til diverse efter nødssituationer. Men også ønsket om at gøre det lettere for to bekendte at låne penge til hinanden, men sikre at den økonomiske situation ikke kommer mellem dem vha. af en juridisk kontrakt, der skal holde begge parter ansvarlige for aftalen. <br> Efterfølgende er hele designet, forretningmodellen og det videre koncept udarbejdet af en gruppe 3. semester studerende fra Aarhus Universitet.</p>
       </div>
       <div class="well">
        <p><strong>Hvorfor vælge os?</strong> <br> Enkelte, overskuelige og juridiskbindende kontrakter</p>
@@ -52,6 +52,7 @@
   </div>
 <hr>
 <h3><strong>KONTAKT OS</strong></h3>
+<hr>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
   <div class="row">
@@ -78,7 +79,6 @@
       </div>
     </div>
   </div>
-<hr>
 </div>
 </body>
 </html>
