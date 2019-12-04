@@ -409,8 +409,8 @@ h2{                     /*h2 overskrift ændring*/
     margin-bottom: 30px;
   }  
   .jumbotron {
-    background-color: forestgreen;
-    color: #fff;
+    background-color: whitesmoke;
+    color: black;
     padding: 100px 25px;
     font-family: Montserrat, sans-serif;
   }
