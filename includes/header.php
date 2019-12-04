@@ -10,16 +10,20 @@ require_once('conn.php')
 <html lang="en">
 <head>
 	   <meta charset="utf-8">
-	   <meta name="viewport" content="width=device-width, initial-scale=1">
+	   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	   <meta name="description" content="">
 	   <meta name="author" content="Projektgruppe 3">
 	   <title><?php echo $page;?></title>                                       <!-- Gør siderne dynamiske, så der ændres navn i toppen -->                      
          
-        <!-- Bootstrap core css -->
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        
+        <!-- Bootstrap core CSS -->
+        <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
         <link rel="icon" type="image/x-icon" href="images/mutuum.ico">
         <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
 
+        <!-- Custom styles for this template -->
+        <link href="css/heroic-features.css" rel="stylesheet">
     
 
     <!-- js bootstrap -->
@@ -30,53 +34,31 @@ require_once('conn.php')
     
 
 </head>
-    
 <body>
- <!--Skaber menu-bar containeren-->
-<div class="jumbotron" id="jumbotron">
-<div id="llogin">
-
-    <?php
-if(isset($_SESSION['user_id'])){
-    echo'<a href="logout.php">LOG UD</a>';
-    }  else 
-    echo '<a href="login.php">LOG IND</a>';
-    ?>
-    
-    
-</div>  
-    <a href="index.php"><img src="images/mutuumudenbaggrund.png" class="limg"></a>
-
-    <div id="lmenu-bar">
-        <!-- skaber funktionen, at man kan klikke-->
-    <div id="lmenu" onclick="onClickMenu()">
-
-                <!--skaber egentligt en firkant, som vi splitter op i CSS til burgeren-->
-        <div id="lbar1" class="lbar"></div>
-        <div id="lbar2" class="lbar"></div>
-        <div id="lbar3" class="lbar"></div>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#">Start Bootstrap</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+        </ul>
+      </div>
     </div>
-                <!--Skaber navigationsbaren når burgeren er foldet ud-->
-        <ul class="lnav" id="lnav">
-                    <!-- Understående er punkter som står i navigationsbaren, når burgeren åbner-->
-            <li><a href="login.php">Login </a> </li>
-            <li><a href="opretbruger.php">Opret Bruger</a> </li>
-            <li><a href="minside.php">Min side</a> </li>
-            <li><a href="om_os.php">Om Mutuum</a> </li>
-            <li><a href="faq.php">FAQ</a> </li>
-        </ul>           
-    </div>
- </div>
-
-<!-- Skaber blokken som kommer fra burgeren når den åbnes og dækker siden-->
-        <div class="lmenu-block" id="lmenu-block"> 
-        </div>
-        
-        <!--JS link-->
-        <script> 
-            function onClickMenu(){
-            document.getElementById("lmenu").classList.toggle("lchange");
-            document.getElementById("lnav").classList.toggle("lchange");
-            document.getElementById("lmenu-block").classList.toggle("lchange-block");
-}</script>
-    
+  </nav>
