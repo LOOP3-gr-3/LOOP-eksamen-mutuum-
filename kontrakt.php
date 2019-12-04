@@ -54,13 +54,13 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
     }
      
 ?>
-<div id="om-os-container">
-<div id="site'highlights" style="text-align:center">
+
+<div id="site-highlights">
     <hr>
     <h1><strong>Opret Kontrakt</strong></h1>
     <hr>
 </div>
-
+<div id="om-os-container">
 <p id="xx"><I>Udfyld venligst nedenstående felter til din kontrakt:</I></p><br>
 
 <!-- her laves funktionen der skal få den bestemte kontrakt til at blive vist, jeg koder knappen efter bootstrap btn btn-light, så de bliver grå-->
