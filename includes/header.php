@@ -13,6 +13,9 @@ if (isset($_SESSION['user_id']))
 	   <meta name="author" content="Projektgruppe 3">
 	   <title><?php echo $page;?></title>                                       <!-- Gør siderne dynamiske, så der ændres navn i toppen -->                      
          
+        <!--Google skrifttyper-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
         
         <!-- Bootstrap core CSS -->
         <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
