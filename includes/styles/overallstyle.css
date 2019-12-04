@@ -409,6 +409,9 @@ h2{                     /*h2 overskrift ændring*/
     font-weight: 600;
     margin-bottom: 30px;
   }
+.container-fluid {
+    padding: 60px 50px;
+}
   h4 {
     font-size: 19px;
     line-height: 1.375em;
@@ -416,24 +419,17 @@ h2{                     /*h2 overskrift ændring*/
     font-weight: 400;
     margin-bottom: 30px;
   }  
-
-  .forside {
-    padding: 60px 50px;
-}
- #forsideliste{
-        text-align: left;
-    }
   }
   .bg-grey {
     background-color: #f6f6f6;
     }
  
   .carousel-control.right, .carousel-control.left {
-    background-image: none;
-    color: #f4511e;
+    background-color: none;
+    color: forestgreen;
   }
   .carousel-indicators li {
-    border-color: forestgreen;
+    border-color: black;
   }
   .carousel-indicators li.active {
     background-color: forestgreen;
@@ -448,6 +444,14 @@ h2{                     /*h2 overskrift ændring*/
   .item span {
     font-style: normal;
   }
+.panel {
+    border: 1px solid #f4511e; 
+    border-radius:0 !important;
+    transition: box-shadow 0.5s;
+  }
+  .panel:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+}
  
   .slideanim {visibility:hidden;}
   .slide {
@@ -491,7 +495,16 @@ h2{                     /*h2 overskrift ændring*/
     .logo {
       font-size: 150px;
     }
+
+#forsidekontaktformular {
+          text-align: center;
+      }
+.centrerknap {
+          margin-left: 3;
+      }
+
 }
+
 
 
 
