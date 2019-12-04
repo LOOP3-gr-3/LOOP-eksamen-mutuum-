@@ -20,7 +20,7 @@
 
         <div class="om-os-container">
                 <h2 class="hvad-er-mutuum">Lån sikkert med nemID</h2>
-                <img class="xw" src="images/lock.PNG">
+                <img src="images/lock.PNG">
                 <div class="margin-container">
                     <p>Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
                 </div>

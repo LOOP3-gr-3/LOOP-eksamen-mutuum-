@@ -14,16 +14,7 @@
     <p>Teamet har i WEB-Technologies afgrænset sig fra oplysnigerne, som skal præsenteres på denne side</p>
 </div>
     <br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
-<br>
+
 </div>
 <?php
 require_once('includes/footer.php');
