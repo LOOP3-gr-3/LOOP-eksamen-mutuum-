@@ -58,7 +58,7 @@ if (isset($_SESSION['user_id']))
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="om_os.php">Om os
+                        <a class="nav-link" href="Wasfia-omOs.php">Om os
                         </a>
                     </li>
                     
@@ -81,7 +81,7 @@ if (isset($_SESSION['user_id']))
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="om_os.php">Om os
+                        <a class="nav-link" href="Wasfia-omOs.php">Om os
                         </a>
                     </li>';}
          ?>
