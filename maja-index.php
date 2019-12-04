@@ -6,7 +6,7 @@
  <header class="jumbotron my-4">
       <h1 class="display-3">MUTUUM</h1>
       <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, ipsam, eligendi, in quo sunt possimus non incidunt odit vero aliquid similique quaerat nam nobis illo aspernatur vitae fugiat numquam repellat.</p>
-      <a href="#" class="btn btn-primary btn-lg">Call to action!</a>
+      <a href="#" class="btn btn-primary btn-lg">Kom i gang</a>
     </header>
 
     <!-- Page Features -->
@@ -14,9 +14,9 @@
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <img class="card-img-top" src="images/lock.PNG" alt="">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
+            <h4 class="card-title">Lån sikkert</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
@@ -27,9 +27,9 @@
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <img class="card-img-top" src="images/checkbox.PNG" alt="">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
+            <h4 class="card-title">Juridiskbindende kontrakter</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
           </div>
           <div class="card-footer">
@@ -40,9 +40,9 @@
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <img class="card-img-top" src="images/l%C3%A5ntager.PNG" alt="">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
+            <h4 class="card-title">Låntager</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente esse necessitatibus neque.</p>
           </div>
           <div class="card-footer">
@@ -53,9 +53,9 @@
 
       <div class="col-lg-3 col-md-6 mb-4">
         <div class="card h-100">
-          <img class="card-img-top" src="http://placehold.it/500x325" alt="">
+          <img class="card-img-top" src="images/l%C3%A5ntager.PNG" alt="">
           <div class="card-body">
-            <h4 class="card-title">Card title</h4>
+            <h4 class="card-title">Långiver</h4>
             <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo magni sapiente, tempore debitis beatae culpa natus architecto.</p>
           </div>
           <div class="card-footer">
