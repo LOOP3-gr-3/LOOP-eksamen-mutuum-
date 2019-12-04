@@ -1,8 +1,6 @@
-<!-- her henter jeg headeren ind og kontraktdatabasen -->
 <?php 
     $page = ('Oprettelse af kontrakt');
-/*her henter jeg headeren ned*/
-    require_once('includes/header.php');
+    require_once('includes/header.php');/*-- her henter jeg headeren ind og kontraktdatabasen */
     if (isset($_SESSION['user_id'])) {
         header('location: kontrakt.php');
 }
@@ -21,7 +19,6 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
     $laantager_underskrift_id = $_POST['laantager_underskrift_id'];
     $reg_underskrift_1 = $_POST['reg_underskrift2'];
     $betalings_status_id = $_POST['betalings_status_id'];
-    
     
     $laangiver_user_id = get_post['laangiver_user_id'];
     $laantager_user_id = $_POST['laangiver_user_id'];
@@ -54,13 +51,13 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
     }
      
 ?>
-<div id="om-os-container">
-<div id="site'highlights" style="text-align:center">
+
+<div id="site-highlights">
     <hr>
     <h1><strong>Opret Kontrakt</strong></h1>
     <hr>
 </div>
-
+<div id="om-os-container">
 <p id="xx"><I>Udfyld venligst nedenstående felter til din kontrakt:</I></p><br>
 
 <!-- her laves funktionen der skal få den bestemte kontrakt til at blive vist, jeg koder knappen efter bootstrap btn btn-light, så de bliver grå-->

@@ -1,10 +1,8 @@
 <?php
-
 //skaber connection til databasen
-require_once('conn.php') 
-
-//Her skal tilføjes, hvis der skal være forskel på navbarens udseende.                                                               
-?>
+require_once('conn.php');
+if (isset($_SESSION['user_id']))
+//Her skal tilføjes, hvis der skal være forskel på navbarens udseende?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -21,6 +19,8 @@ require_once('conn.php')
 
         <link rel="icon" type="image/x-icon" href="images/mutuum.ico">
         <link rel="stylesheet" href="includes/styles/overallstyle.css" type="text/css">
+    
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 
         <!-- Custom styles for this template -->
         <link href="css/heroic-features.css" rel="stylesheet">
@@ -45,20 +45,50 @@ require_once('conn.php')
       <div class="collapse navbar-collapse" id="navbarResponsive">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="maja-index.php">Home
-              <span class="sr-only">(current)</span>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="om_os.php">Om os</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="kontakt.php">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="handelsbetingelser.php    ">Handesbetingelser</a>
-          </li>
-        </ul>
+              <?php
+            if (isset($_SESSION['user_id'])){
+                echo
+                '<li class="nav-item">
+                        <a class="nav-link" href="maja-index.php"> Forside <span class="sr-only">(current)</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="minside.php">Min side
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="om_os.php">Om os
+                        </a>
+                    </li>
+                    
+                    <li class="nav-item">
+                        <a class="nav-link" href="logout.php">Log ud
+                        </a>
+                    </li>';}
+              
+                else { echo
+                 '<li class="nav-item">
+                        <a class="nav-link" href="maja-index.php"> Forside <span class="sr-only">(current)</span> 
+                        </a> 
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.php">Log ind
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="opretbruger.php">Opret bruger
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Wasfia-om_os.php">Om os
+                        </a>
+                    </li>';}
+         ?>
+            
+      
       </div>
-    </div>
-  </nav>
+      </div>
+    </nav>
+    
+
+        

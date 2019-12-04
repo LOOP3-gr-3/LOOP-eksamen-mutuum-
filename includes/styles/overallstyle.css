@@ -1,3 +1,22 @@
+
+/*__________________________________________________HEADER________________________________________made by Lasse*/
+
+body{
+    background-color:white;
+}
+
+.om-os-container{   /*container der sørger for rum imellem content og footer*/
+    position:relative;
+    width:100%;
+    height:auto;
+    padding: 1.25em;
+}
+
+.site-highlights {
+    text-align: center;
+}
+
+
 /*__________________________________________________Alle overskrifter________________________________________Maja og Lasse*/
 
 h1 {
@@ -30,107 +49,16 @@ input::placeholder{
 }
 
 
-/*___________________________________ MIN SIDE ___________________________________ made by Lasse*/
+/*___________________________________ MIN SIDE ___________________________________ made by Mette*/
 
-.container-las{             /*Beskriver den container som de 5 andre                                   "under" containere befinder sig i*/
-    position:relative;
-    height:35em;
-    width:auto;
-    margin-bottom:2em;
-    margin-left:5%;
-    margin-right:5%;
+#KFUMfixed{
+    position: fixed;
+    right: 3%;
+    bottom: 10%;
+    height: auto;
+    width: auto;
 }
 
-/*Disse containere er IKKE selve billedet*/
-
-.container1-5{          /*Container 1 - "Min profil" */ 
-    display:block;
-    position:absolute;
-    width: 15%;
-    height: 30%;
-    left:7%;
-    margin: 1px;
-}
-
-.container2-5{          /*Container 2 - "Rådgivning" */ 
-    display:block;
-    position:absolute;
-    width: 15%;
-    height: 30%;
-    left:27%;
-    margin: 1px;
-}
-
-.container3-5{          /*Container 3 - "Match" */
-    display:block;
-    position:absolute;
-    width: 15%;
-    height: 30%;
-    left:47%;
-    margin: 1px;
-    
-    
-}
-
-.container4-5{          /*Container 4 - "Opret kontrakt" */
-    display:block;
-    position:absolute;
-    width: 15%;
-    height: 30%;
-    left:67%;
-    margin: 1px;
-   
-    
-}
-
-.container5-5{          /*Container 5 - "Statistik" */
-    display:block;
-    position:absolute;
-    width: 15%;
-    height: 30%;
-    left:29%;
-    margin: 2px;
-    top:16em;
-}
-
-.l-billede{             /*Fortæller noget om billedernes position*/
-    position:relative;
-    margin-left:18%;
-    margin-right:18%;
-    top:0.5em;
-    
-}
-
-.l-billede:hover{       /*Fader billede når der hovers*/
-    opacity:0.4;
-}
-
-
-/*-------------------------------------------LOG IND BAR I HEADER--------------------------------made by Lasse*/
-
-#llogin{                /*Fortæller om LOG IND knaps placering, position, rammen omkring og margin fra top og bund af jumbotron*/
-    position:relative; 
-    width: 25%;
-    left:65%;   
-    opacity:0.6;
-    margin-top:2%;
-    margin-bottom: 2%;
-    text-align:center;
-    border:0.09em solid black;
-    border-radius:20px;
-    text-decoration: none;
-}
-
-#llogin a{      /*Fjerne den standard blå farve ved link og laver sort*/
-    color:black;
-}
-
-#llogin a:hover{   /*Beskriver funktionen når man hover LOG IND knappen,                    teksten ændres til bold grøn, ingen understregning*/
-    color:forestgreen;
-    text-decoration: none;
-    font-weight: 800;    
-    
-}
 
 /*------------------------------------ mine aftaler ----------------------------Maja-*/
 #Xlup  { /*sørger for at billede med luppen ikke bliver overdrevet stor*/
@@ -155,18 +83,6 @@ td, th {
 }
 
 
-/*---------------------Billederne til min side------Lasse--------*/
-.billede1{
-    width:200%;
-    height:200%;
-
-}
-.billede2{
-    width:200%;
-    height:200%;
-}
-
-    
 #xx {
     text-align: center;
 }
@@ -181,9 +97,6 @@ td, th {
 #jumbotron{                     
     background-color:whitesmoke;
     border-radius:0% !important;
-}
-.om-os-container{                       /*Sørger for plads imellem                                              content og footer*/
-    margin-bottom: 7em !important;
 }
 
 #llogin{                    /*Formindske login-knap og størrelse*/
@@ -209,47 +122,10 @@ td, th {
     left:1.2em;
 }
 
-.container1-5{      /*Ændringer af containers placering m. billede*/
-    left:-5% !important;
-}
-    
-.container2-5{      /* ---------------- || -------------------- */
-    left:50%;
-}
-    
-.container3-5{      /* ---------------- || -------------------- */
-    left:-5%;
-    top:7.5em;
-}
-    
-.container4-5{      /* ---------------- || -------------------- */
-    left:50%;
-    top:7.5em;
-}
-    
-.container5-5{      /* ---------------- || -------------------- */
-    left:18%;
-    top:15em;
-}
-    
-.billede1{          /*Fortæller om str. ændringer på billeder*/
-    width:500%;
-    height:500%;
-}
-    
-.billede2{          /* ---------------- || -------------------- */
-    width:600%;
-    height:7em !important;      
-}
-      
 .limg{              /* Fortæller om den nye placering af header img*/
     left:5%;
     width:30%;
     height:15%;
-}
-    
-body{               /*Giver body farve - overfladisk*/
-    background-color:white;
 }
     
 .las-tekst-venstre{ /*str på FAQ, HB og Kontakt i footer*/
@@ -304,7 +180,7 @@ body{               /*Giver body farve - overfladisk*/
 
 
 /*Media Screen for iPads*/
-@media screen and (min-width: 768px)and (max-width:1299 px) {
+@media screen and (min-width: 768px)and (max-width:1299px) {
   #jumbotron {  /*Beskriver ændringer i header/BS*/
     background-color: whitesmoke;
     border-radius:0 !important;
@@ -335,47 +211,10 @@ body{               /*Giver body farve - overfladisk*/
     left:60%;
     top:0.8em; 
 }
-    
-.container1-5{      /*Ændringer af containers placering m. billede*/
-    left:18% !important;
-}
-    
-.container2-5{       /* ---------------- || -------------------- */
-    left:52%;
-}
-    
-.container3-5{       /* ---------------- || -------------------- */
-    left:18%;
-    top:12em;
-}
-    
-.container4-5{       /* ---------------- || -------------------- */
-    left:52%;
-    top:12em;
-}
-    
-.container5-5{       /* ---------------- || -------------------- */
-    left:20.5%;
-    top:24em;
-}
-    
-.billede1{          /*Fortæller om str. ændringer på billeder*/
-    width:200%;
-    height:200%;
-}
-    
-.billede2{           /* ---------------- || -------------------- */
-    width:400%;
-    height:11.5em !important;      
-}
 
 .l-billede{         /*holder billeder på pladsen*/
     margin-left:auto;
     margin-right:auto;
-}
-    
-body{               /*body farve, overfladisk at nævne i hver Media*/
-    background-color:white;
 }
     
 .las-tekst-hojre{   /*str på CVR osv i footer*/
@@ -430,36 +269,7 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     margin:0.25em;
 }
     
-.container1-5{      /*Ændringer af containers placering m. billede*/
-    left:0% !important;
-}
-    
-.container2-5{      /* ---------------- || -------------------- */
-    left:25%;
-}
-    
-.container3-5{      /* ---------------- || -------------------- */
-    left:50%;
-}
-    
-.container4-5{      /* ---------------- || -------------------- */
-    left:75%;
-}
-    
-.container5-5{      /* ---------------- || -------------------- */
-    left:34.5%;
-    top:12em;
-}
-    
-.billede1{          /*Fortæller om str. ændringer på billeder*/
-    width:150%;
-    height:150%;
-}
-    
-.billede2{          /* ---------------- || -------------------- */
-    height:8.5em !important;      
-}     
-    
+
 .billedefoot{       /*grøn knap footer, str og afstand fra start footer*/ 
     width:85%;
     height:82%; 
@@ -481,10 +291,6 @@ body{               /*body farve, overfladisk at nævne i hver Media*/
     margin-bottom:40em !important;
     position:relative;
 }
-    
-body{           /*body farve hvid, overfladisk*/
-    background-color:white;
-}
 }
 
 /*Media Screen for PC og andre computere med 15*/ 
@@ -492,10 +298,6 @@ body{           /*body farve hvid, overfladisk*/
     
 #jumbotron {    /*Beskriver ændringer i header/BS*/
     background-color: whitesmoke;
-}
- 
-.om-os-container{       /*Sørger for plads imellem content og footer*/
-    margin-bottom:6.5em !important;
 }
     
 #llogin{                /*Formindske login-knap og størrelse*/
@@ -522,10 +324,6 @@ body{           /*body farve hvid, overfladisk*/
 .lbar{ /*fortæller om burgers farver, display, højde og bredde før                                  åbning*/
     top:-.5em;
 }
-
-.container5-5{  /*Ændringer af containers placering m. billede*/
-    width:25%;    
-}
     
 h1{             /*ændringer af overskriften h1*/
     font-size:2.5em;
@@ -551,18 +349,10 @@ h1{             /*ændringer af overskriften h1*/
 }
 
 
-/*----------------------OM OS------------------------------------------made by Lasse*/
+/*----------------------OM OS------------------------------------------made by Wasfia*/
 
-.om-os-container{   /*container der sørger for rum imellem content og footer*/
-    position:relative;
-    width:100%;
-    height:auto;
-    margin-bottom:3em;
-    padding: 20px;
-}
-
-.wbillede1 {
-    width:9em;
+.row {
+    text-align: center;
 }
 
 

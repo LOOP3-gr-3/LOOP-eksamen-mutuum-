@@ -5,13 +5,11 @@ require_once('includes/header.php');
 /* Her sikrer vi at brugeren er logget ind, og ellers så dirigeres brugeren ud på login siden */
   if (!isset($_SESSION['user_id'])) {
         echo '<script>alert("Du er ikke logget ind på MUTUUM - log ind her, eller opret en bruger og få gratis adgang til platformen!");';
-       echo 'window.location.href="login.php";';
+        echo 'window.location.href="login.php";';
         echo '</script>' ;
         die();
 } 
 ?>
-
-<!-- Her sættes headeren på siden -->
 <div class="site-highlights">
     <hr>
     <h1><strong>Matchsite</strong></h1>
@@ -21,7 +19,6 @@ require_once('includes/header.php');
     <div>
         <h3 style=text-align:center><strong>Kontraktanmodninger sendt til DIG</strong></h3>
     </div>
-
     <?php
     /* Her sættes user_id til den bruger som er logget ind */
 	$user_id = $_SESSION['user_id'];
@@ -52,10 +49,8 @@ require_once('includes/header.php');
         $beloeb_id = $row5["beloeb_id"];
         $bindingsperiode_id = $row5["bindingsperiode_id"];
         $laangiver_underskrift_id = '2';}
-            
-            
-?>
-        <!-- Her tjekkes kontrakterne OG beloeb igennem for hvor variablen kontrakt_id fra sektionen over, passer med beloeb_id fra databasen -->        
+            ?>
+        <!-- Her tjekkes kontrakterne OG beloeb igennem for hvor variablen kontrakt_id fra sektionen over, passer med beloeb_id fra databasen -->       
                 <?php $queryA = "SELECT * FROM kontrakt NATURAL JOIN beloeb WHERE beloeb_id = '$kontrakt_id'";
                 if($resultA = mysqli_query($con,$queryA)){
                 $objA = mysqli_fetch_assoc($resultA);}
@@ -72,7 +67,6 @@ require_once('includes/header.php');
             </tr>
                 <?php
 }
-     
     ?>
         </table>
     </div>
@@ -86,12 +80,9 @@ require_once('includes/header.php');
       }
 }      
 ?>
-
-
   <div>
         <h3 style=text-align:center><strong>Kontraktanmodningerer på markedet</strong></h3>
     </div>
-
 <!--her sammenholdes det om der er nogle sammenfald mellem laantager_user_id og sessionens user_id i kontrakt tables -->
     <?php 
 $query3 = "SELECT * FROM kontrakt WHERE laantager_user_id ='$user_id'";
@@ -99,9 +90,7 @@ $query3 = "SELECT * FROM kontrakt WHERE laantager_user_id ='$user_id'";
 if($result3){
         while($row3 = $result3->fetch_assoc()){
         $kredit_id1 = $row3["kredit_id"];}
-    
 /* kredit_id fra kontrakttablet og variablen kredit_id1 sammenholdes  */
-    
 $query2 = "SELECT * FROM kontrakt WHERE kredit_id ='$kredit_id1'";
 $result2 = mysqli_query($con, $query2);
     if($result2){
@@ -119,10 +108,8 @@ $result2 = mysqli_query($con, $query2);
         $reg_underskrift_1 = $row2["reg_underskrift_1"];
         $laantager_underskrift_id = $row2["laantager_underskrift_id"];    
         $reg_underskrift_2 = $row2["reg_underskrift_2"];
-        $betalings_status_id = $row2["betalings_status_id"];
-        
+        $betalings_status_id = $row2["betalings_status_id"]; 
 ?>
-  
     <!--Det sidste table opstilles til at hente variablene ind i  -->
     <table>
         <tr>
@@ -145,19 +132,13 @@ $result2 = mysqli_query($con, $query2);
             <td><?php echo $bindingsperiode_id ?></td>
             <td><?php echo $laangiver_underskrift_id ?></td>
         </tr>
-
     </table>
     <?php
         }
         }
     }
-
-
 ?>
 </div>
-
-
-
 <?php
 require_once('includes/footer.php');
 ?>
