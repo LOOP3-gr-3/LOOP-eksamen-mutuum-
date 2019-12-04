@@ -384,16 +384,18 @@ h2{                     /*h2 overskrift ændring*/
 
 
 /*--------------------FORSIDE----------------------------------------Maja*/
+#baggrundpaaforside {
+    background-color: whitesmoke;
+}
 
 #logoforside {
        width: 30%;
         height: auto;
     }
-  #myPage {
-    font: 400 15px Lato, sans-serif;
-    line-height: 1.8;
-    color: #818181;
-  }
+#contact {
+    background-color: whitesmoke;
+}
+]
   h2 {
     font-size: 24px;
     text-transform: uppercase;
@@ -408,14 +410,13 @@ h2{                     /*h2 overskrift ændring*/
     font-weight: 400;
     margin-bottom: 30px;
   }  
-  .jumbotron {
-    background-color: whitesmoke;
-    color: black;
-    padding: 100px 25px;
-    font-family: Montserrat, sans-serif;
-  }
+
   .forside {
     padding: 60px 50px;
+}
+ #forsideliste{
+        text-align: left;
+    }
   }
   .bg-grey {
     background-color: #f6f6f6;
