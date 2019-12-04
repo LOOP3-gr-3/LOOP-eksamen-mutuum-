@@ -59,7 +59,9 @@ input::placeholder{
     height: auto;
     width: auto;
 }
-
+.minsidefigur{
+    margin-bottom: 15%;
+}
 
 /*------------------------------------ mine aftaler ----------------------------Maja-*/
 #Xlup  { /*sørger for at billede med luppen ikke bliver overdrevet stor*/
