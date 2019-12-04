@@ -13,6 +13,10 @@ body{
     padding: 1.25em;
 }
 
+.site-highlights {
+    text-align: center;
+}
+
 
 /*__________________________________________________Alle overskrifter________________________________________Maja og Lasse*/
 
@@ -46,16 +50,14 @@ input::placeholder{
 }
 
 
-
-
 /*___________________________________ MIN SIDE ___________________________________ made by Mette*/
 
 #KFUMfixed{
     position: fixed;
-    right: 0%;
+    right: 3%;
     bottom: 10%;
-    height: 10%;
-    width: 10%;
+    height: auto;
+    width: auto;
 }
 
 
