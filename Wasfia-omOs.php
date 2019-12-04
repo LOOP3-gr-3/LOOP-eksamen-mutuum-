@@ -4,6 +4,8 @@
     require_once('includes/header.php');
 ?>
 
+<title>Bootstrap Example</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 <div class="site-highlights">
 <hr>
