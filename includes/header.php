@@ -87,7 +87,8 @@ if (isset($_SESSION['user_id']))
                         </a>
                     </li>';}
          ?>
-            
+            </li>
+          </ul>
       
       </div>
       </div>
