@@ -2,7 +2,8 @@
 <?php
 require_once('conn.php');
 if (isset($_SESSION['user_id']))
-//Her skal tilføjes, hvis der skal være forskel på navbarens udseende?>
+?>
+<!--Her skal tilføjes, hvis der skal være forskel på navbarens udseende-->
 
 <!DOCTYPE html>
 <html lang="en">
