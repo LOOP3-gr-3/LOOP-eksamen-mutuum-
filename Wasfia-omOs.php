@@ -1,8 +1,7 @@
-<!-- her henter jeg headeren ned -->
 <?php
     $page = ('Om MUTUUM');
     require_once('includes/header.php');
-?>
+?> <!-- her henter jeg headeren ned -->
 
 <title>Bootstrap Example</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
@@ -43,14 +42,12 @@
       </div>
     </div>
   </div>
-</div>
 <div class="site-highlights">
 <hr>
-<h3><strong>KONTAKT OS</strong></h3>
+<h1><strong>KONTAKTOPLYSNINGER</strong></h1>
 <hr>
 </div>
-<!-- Container (Contact Section) -->
-<div id="contact" class="container-fluid bg-grey">
+<div id="contact" class="container-fluid bg-grey"> <!-- Container (Contact Section) -->
   <div class="row">
     <div class="col-sm-5">
       <p>Kontakt os og vi vil vende tilbage til dig inden 24 timer.</p>
@@ -58,23 +55,8 @@
       <p><span class="glyphicon glyphicon-phone"></span> +45 12345678</p>
       <p><span class="glyphicon glyphicon-envelope"></span> mutuum@hotmail.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
-      <div class="row">
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="name" name="name" placeholder="Navn" type="text" required>
-        </div>
-        <div class="col-sm-6 form-group">
-          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
-        </div>
-      </div>
-      <textarea class="form-control" id="comments" name="comments" placeholder="Besked" rows="5"></textarea><br>
-      <div class="row">
-        <div class="col-sm-12 form-group">
-          <a href="index.php"><button class="btn btn-default pull-right" type="submit">Send</button></a>
-        </div>
-      </div>
-    </div>
   </div>
+</div>
 </div>
 <?php
 require_once('includes/footer.php');
