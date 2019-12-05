@@ -12,7 +12,7 @@
 <hr>
 </div>
 <div class="om-os-container">
-  <div class="row">
+  <div class="row wascentrer">
     <div class="col-sm-4">
       <div class="well">
        <p> <strong>MUTUUM</strong> startede på baggrund af et ønske fra Morten <br> Refsgaard, Jens Eriksen og Sander Dyrvig om at hjælpe dem,<br> der havde brug for lidt ekstra penge til indskud til diverse efter<br> nødssituationer - men også ønsket om at gøre det lettere for to<br> bekendte at låne penge til hinanden og samtidig sikre, at den<br> økonomiske situation ikke kommer mellem dem vha. af en juridisk<br> kontrakt, der skal holde begge parter ansvarlige for aftalen.<br> <br> Efterfølgende er hele designet, altså forretningmodellen og det<br> videre koncept udarbejdet af en gruppe 3. semester studerende<br> fra Aarhus Universitet.</p>
@@ -42,21 +42,6 @@
       </div>
     </div>
   </div>
-<div class="site-highlights">
-<hr>
-<h1><strong>KONTAKTOPLYSNINGER</strong></h1>
-<hr>
-</div>
-<div id="contact" class="container-fluid bg-grey"> <!-- Container (Contact Section) -->
-  <div class="row">
-    <div class="col-sm-5">
-      <p>Kontakt os og vi vil vende tilbage til dig inden 24 timer.</p>
-      <p><span class="glyphicon glyphicon-map-marker"></span>Birk Centerpark 15, 7400 Herning</p>
-      <p><span class="glyphicon glyphicon-phone"></span> +45 12345678</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> mutuum@hotmail.com</p>
-    </div>
-  </div>
-</div>
 </div>
 <?php
 require_once('includes/footer.php');
