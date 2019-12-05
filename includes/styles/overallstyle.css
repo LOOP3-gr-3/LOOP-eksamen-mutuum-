@@ -349,6 +349,11 @@ h1{             /*ændringer af overskriften h1*/
 .wascentrer {
     text-align: center;
 }
+.wastekstboks {
+    border-color: black !important;
+    background: white;
+    border-radius: 2em;
+}
 
 
 /*-----------------------MinProfil--------------------*/

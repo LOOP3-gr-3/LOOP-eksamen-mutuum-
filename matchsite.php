@@ -17,7 +17,7 @@ require_once('includes/header.php');
 </div>
 <div class="om-os-container">
     <div>
-        <h3 style=text-align:center><strong>Kontraktanmodninger sendt til DIG</strong></h3>
+        <h3 style=text-align:center><strong>Kontraktanmodninger sendt til dig</strong></h3>
     </div>
     <?php
     /* Her sættes user_id til den bruger som er logget ind */
@@ -69,8 +69,7 @@ require_once('includes/header.php');
 }
     ?>
         </table>
-    </div>
-    <!-- Der tjekkes om der er kommet et resultat, og hvis ikke der er, meddeles der at der ikke er nogle. -->
+    </div>     <!-- Der tjekkes om der er kommet et resultat, og hvis ikke der er, meddeles der at der ikke er nogle. -->
 <?php
 	if (!$result5) die(mysqli_error($con));
 	else {
@@ -82,15 +81,13 @@ require_once('includes/header.php');
 ?>
   <div>
         <h3 style=text-align:center><strong>Kontraktanmodningerer på markedet</strong></h3>
-    </div>
-<!--her sammenholdes det om der er nogle sammenfald mellem laantager_user_id og sessionens user_id i kontrakt tables -->
+    </div> <!--her sammenholdes det om der er nogle sammenfald mellem laantager_user_id og sessionens user_id i kontrakt tables -->
     <?php 
 $query3 = "SELECT * FROM kontrakt WHERE laantager_user_id ='$user_id'";
    $result3 = mysqli_query($con, $query3);
 if($result3){
         while($row3 = $result3->fetch_assoc()){
-        $kredit_id1 = $row3["kredit_id"];}
-/* kredit_id fra kontrakttablet og variablen kredit_id1 sammenholdes  */
+        $kredit_id1 = $row3["kredit_id"];} /* kredit_id fra kontrakttablet og variablen kredit_id1 sammenholdes  */
 $query2 = "SELECT * FROM kontrakt WHERE kredit_id ='$kredit_id1'";
 $result2 = mysqli_query($con, $query2);
     if($result2){
@@ -110,8 +107,7 @@ $result2 = mysqli_query($con, $query2);
         $reg_underskrift_2 = $row2["reg_underskrift_2"];
         $betalings_status_id = $row2["betalings_status_id"]; 
 ?>
-    <!--Det sidste table opstilles til at hente variablene ind i  -->
-    <table>
+    <table>   <!--Det sidste table opstilles til at hente variablene ind i  -->
         <tr>
             <th>Kontrakt ID</th>
             <th>Långivers Navn</th>
