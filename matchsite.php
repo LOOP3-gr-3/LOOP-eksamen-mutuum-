@@ -1,6 +1,5 @@
 <?php  
 $page = 'MinSide'; 
-/* her hentes headeren ind */
 require_once('includes/header.php');
 /* Her sikrer vi at brugeren er logget ind, og ellers så dirigeres brugeren ud på login siden */
   if (!isset($_SESSION['user_id'])) {
@@ -27,8 +26,7 @@ require_once('includes/header.php');
 	$result5 = mysqli_query($con, $query5);
     $rows5 = mysqli_num_rows($result5);
 		if ($rows5 > 0) { ?>
-    <div>
-    <!-- Her skaber vi tabellen til overblikket af de kontrakter, som er tildelt fra långiver (netværkslån) -->
+    <div>     <!-- Her skaber vi tabellen til overblikket af de kontrakter, som er tildelt fra långiver (netværkslån) -->
         <table>
             <tr>
                 <th>Kontrakt ID</th>
@@ -38,8 +36,7 @@ require_once('includes/header.php');
                 <th>Løbetid</th>
                 <th>Kontraktbrud</th>
                 <th>Underskrevet af långiver</th>
-            </tr>
-    <!-- Her begynder vi at finde de værdier vi gerne vil lægge ind i tabellen, og placere værdierne i variable -->
+            </tr>     <!-- Her begynder vi at finde de værdier vi gerne vil lægge ind i tabellen, og placere værdierne i variable -->
             <?php
      while($row5 = mysqli_fetch_assoc($result5)){
         $kontrakt_id = $row5["kontrakt_id"];
@@ -49,13 +46,11 @@ require_once('includes/header.php');
         $beloeb_id = $row5["beloeb_id"];
         $bindingsperiode_id = $row5["bindingsperiode_id"];
         $laangiver_underskrift_id = '2';}
-            ?>
-        <!-- Her tjekkes kontrakterne OG beloeb igennem for hvor variablen kontrakt_id fra sektionen over, passer med beloeb_id fra databasen -->       
+            ?>         <!-- Her tjekkes kontrakterne OG beloeb igennem for hvor variablen kontrakt_id fra sektionen over, passer med beloeb_id fra databasen -->       
                 <?php $queryA = "SELECT * FROM kontrakt NATURAL JOIN beloeb WHERE beloeb_id = '$kontrakt_id'";
                 if($resultA = mysqli_query($con,$queryA)){
                 $objA = mysqli_fetch_assoc($resultA);}
-                ?>  
-        <!-- vi opstiller en tabel -->   
+                ?>   <!-- vi opstiller en tabel -->   
             <tr>
                 <td><?php echo $kontrakt_id?></td>
                 <td><?php echo $laangiver_fornavn ?></td>
