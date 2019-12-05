@@ -2,14 +2,15 @@
 <?php
     $page = ('Mine aftaler');
     require_once('includes/header.php');
-
-  if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION)) session_start();
+if(!isset($_SESSION['user_id'])) {
         echo '<script>alert("Du er ikke logget ind på MUTUUM - log ind her, eller opret en bruger og få gratis adgang til platformen!");';
         echo 'window.location.href="login.php";';
-        echo '</script>' ;
-        die();
-  }
+        echo '</script>';
+        die(); /*Her bliver brugeren dirigeret til login, hvis de ikke er logget ind */
+}
 ?>
+
 <!--Her hentes alle data fra databasen ind, så det kan indsættes i det forskellige tabeller. Der er benyttet natural join ved laantager_underskrift_id og laangiver_underskrift_id for at siden kan registrere hvem der har skrevet under?-->
 
 

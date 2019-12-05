@@ -2,16 +2,14 @@
 <?php
     $page = ('Min profil');
     require_once('includes/header.php');
-
-
-  if (!isset($_SESSION['user_id'])) {
+if (!isset($_SESSION)) session_start();
+if(!isset($_SESSION['user_id'])) {
         echo '<script>alert("Du er ikke logget ind på MUTUUM - log ind her, eller opret en bruger og få gratis adgang til platformen!");';
         echo 'window.location.href="login.php";';
-        echo '</script>' ;
-        die();
+        echo '</script>';
+        die(); /*Her bliver brugeren dirigeret til login, hvis de ikke er logget ind */
 }
 ?>
-
 <div id="site'highlights" style="text-align:center">
     <hr>
         <h1><strong>Min Profil</strong></h1>
@@ -22,27 +20,21 @@
 <?php
 $user_id = $_SESSION['user_id'];
 $udfyld = "SELECT mail, fornavn, efternavn, mobil FROM users WHERE user_id = '$user_id'";
-
 $result = mysqli_query($con, $udfyld);
-
 $row = mysqli_num_rows($result);
-
 if ($row > 0) {
     while($row = mysqli_fetch_assoc($result)) {
         echo "&nbsp;<strong>Brugernavn:</strong> " . $row['mail'] . "<br>&nbsp;<strong>Fornavn:</strong> " . $row['fornavn'] . "<br>&nbsp;<strong>Efternavn:</strong> " . $row['efternavn'] . "<br>&nbsp;<strong>Telefon nr.:</strong> " . $row['mobil'] . "<br><br>";
-    
         } 
     } else {
     echo "<br>Data er ikke blevet oplyst. Opret bruger eller oplys manglende data";
 }
-
-mysqli_close($con);
-    
+mysqli_close($con);   
 ?>
 
 <!-- denne kode sikre, at brugeren bliver ført over til en nye side, når der klikkes på mine aftaler-->
 <div>
-    <a href="mineaftaler.php" class="btn btn-light" role="button" aria-pressed="true">Mine Aftaler</a><br><br>
+    <a href="mineaftaler.php" class="btn btn-succes" role="button" aria-pressed="true">Mine Aftaler</a><br><br>
 
 
 

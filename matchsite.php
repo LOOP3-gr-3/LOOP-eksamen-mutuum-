@@ -1,14 +1,13 @@
 <?php  
 $page = 'MinSide'; 
-/* her hentes headeren ind */
 require_once('includes/header.php');
-/* Her sikrer vi at brugeren er logget ind, og ellers så dirigeres brugeren ud på login siden */
+if (!isset($_SESSION)) session_start();
   if (!isset($_SESSION['user_id'])) {
         echo '<script>alert("Du er ikke logget ind på MUTUUM - log ind her, eller opret en bruger og få gratis adgang til platformen!");';
         echo 'window.location.href="login.php";';
         echo '</script>' ;
         die();
-} 
+} /* Her sikrer vi at brugeren er logget ind, og ellers så dirigeres brugeren ud på login siden */
 ?>
 <div class="site-highlights">
     <hr>
@@ -17,7 +16,7 @@ require_once('includes/header.php');
 </div>
 <div class="om-os-container">
     <div>
-        <h3 style=text-align:center><strong>Kontraktanmodninger sendt til DIG</strong></h3>
+        <h3 style=text-align:center><strong>Kontraktanmodninger sendt til dig</strong></h3>
     </div>
     <?php
     /* Her sættes user_id til den bruger som er logget ind */
@@ -27,8 +26,7 @@ require_once('includes/header.php');
 	$result5 = mysqli_query($con, $query5);
     $rows5 = mysqli_num_rows($result5);
 		if ($rows5 > 0) { ?>
-    <div>
-    <!-- Her skaber vi tabellen til overblikket af de kontrakter, som er tildelt fra långiver (netværkslån) -->
+    <div>     <!-- Her skaber vi tabellen til overblikket af de kontrakter, som er tildelt fra långiver (netværkslån) -->
         <table>
             <tr>
                 <th>Kontrakt ID</th>
@@ -38,8 +36,7 @@ require_once('includes/header.php');
                 <th>Løbetid</th>
                 <th>Kontraktbrud</th>
                 <th>Underskrevet af långiver</th>
-            </tr>
-    <!-- Her begynder vi at finde de værdier vi gerne vil lægge ind i tabellen, og placere værdierne i variable -->
+            </tr>     <!-- Her begynder vi at finde de værdier vi gerne vil lægge ind i tabellen, og placere værdierne i variable -->
             <?php
      while($row5 = mysqli_fetch_assoc($result5)){
         $kontrakt_id = $row5["kontrakt_id"];
@@ -49,13 +46,11 @@ require_once('includes/header.php');
         $beloeb_id = $row5["beloeb_id"];
         $bindingsperiode_id = $row5["bindingsperiode_id"];
         $laangiver_underskrift_id = '2';}
-            ?>
-        <!-- Her tjekkes kontrakterne OG beloeb igennem for hvor variablen kontrakt_id fra sektionen over, passer med beloeb_id fra databasen -->       
+            ?>         <!-- Her tjekkes kontrakterne OG beloeb igennem for hvor variablen kontrakt_id fra sektionen over, passer med beloeb_id fra databasen -->       
                 <?php $queryA = "SELECT * FROM kontrakt NATURAL JOIN beloeb WHERE beloeb_id = '$kontrakt_id'";
                 if($resultA = mysqli_query($con,$queryA)){
                 $objA = mysqli_fetch_assoc($resultA);}
-                ?>  
-        <!-- vi opstiller en tabel -->   
+                ?>   <!-- vi opstiller en tabel -->   
             <tr>
                 <td><?php echo $kontrakt_id?></td>
                 <td><?php echo $laangiver_fornavn ?></td>
@@ -69,8 +64,7 @@ require_once('includes/header.php');
 }
     ?>
         </table>
-    </div>
-    <!-- Der tjekkes om der er kommet et resultat, og hvis ikke der er, meddeles der at der ikke er nogle. -->
+    </div>     <!-- Der tjekkes om der er kommet et resultat, og hvis ikke der er, meddeles der at der ikke er nogle. -->
 <?php
 	if (!$result5) die(mysqli_error($con));
 	else {
@@ -82,15 +76,13 @@ require_once('includes/header.php');
 ?>
   <div>
         <h3 style=text-align:center><strong>Kontraktanmodningerer på markedet</strong></h3>
-    </div>
-<!--her sammenholdes det om der er nogle sammenfald mellem laantager_user_id og sessionens user_id i kontrakt tables -->
+    </div> <!--her sammenholdes det om der er nogle sammenfald mellem laantager_user_id og sessionens user_id i kontrakt tables -->
     <?php 
 $query3 = "SELECT * FROM kontrakt WHERE laantager_user_id ='$user_id'";
    $result3 = mysqli_query($con, $query3);
 if($result3){
         while($row3 = $result3->fetch_assoc()){
-        $kredit_id1 = $row3["kredit_id"];}
-/* kredit_id fra kontrakttablet og variablen kredit_id1 sammenholdes  */
+        $kredit_id1 = $row3["kredit_id"];} /* kredit_id fra kontrakttablet og variablen kredit_id1 sammenholdes  */
 $query2 = "SELECT * FROM kontrakt WHERE kredit_id ='$kredit_id1'";
 $result2 = mysqli_query($con, $query2);
     if($result2){
@@ -110,8 +102,7 @@ $result2 = mysqli_query($con, $query2);
         $reg_underskrift_2 = $row2["reg_underskrift_2"];
         $betalings_status_id = $row2["betalings_status_id"]; 
 ?>
-    <!--Det sidste table opstilles til at hente variablene ind i  -->
-    <table>
+    <table>   <!--Det sidste table opstilles til at hente variablene ind i  -->
         <tr>
             <th>Kontrakt ID</th>
             <th>Långivers Navn</th>

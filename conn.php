@@ -1,7 +1,6 @@
 <?php
-//if (!isset($_SESSION)) session_start();
+if (!isset($_SESSION)) session_start();
 ob_start();
-session_start();
 require_once("admin/data/login.php");
 //Create the connection
 $con = mysqli_connect($host, $username, $password, $database);

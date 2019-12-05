@@ -1,7 +1,7 @@
 <?php
 $page = 'Log Ind';
 require_once('includes/header.php');
-
+if (!isset($_SESSION)) session_start();
 if(isset($_SESSION['user_id'])) {
     header('Location: minside.php'); /*Her bliver brugeren dirigeret til minside, hvis de er logget ind */
 }
