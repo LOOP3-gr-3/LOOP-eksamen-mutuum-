@@ -51,7 +51,7 @@ require_once('includes/header.php');
  </div>      
      
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
+<div id="portfolio" class="container-fluid text-center">
   <h2>Tanken bag MUTUUM</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->

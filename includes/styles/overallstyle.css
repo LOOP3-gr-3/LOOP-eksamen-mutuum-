@@ -397,17 +397,16 @@ h2{                     /*h2 overskrift ændring*/
 
 #forsideliste {
     text-align: left;
-    margin-left: 5em;
 }
 .forsidesymbol {
-    width: 25%;
+    width: 30%;
     height: auto;
 }
 #contact {
     background-color: whitesmoke;
 }
 .container-fluid {
-    padding: 3em 2em;
+    padding: 1em 1em;
 }
   h4 {
     font-size: 1.2em;
