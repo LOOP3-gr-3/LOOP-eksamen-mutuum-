@@ -9,7 +9,7 @@
 <link href="includes/styles/overallstyle.css" type="text/css" rel="stylesheet">
 <div class="site-highlights">
 <hr>
-  <h3><strong>HVEM ER VI?</strong></h3>
+  <h1><strong>HVEM ER VI?</strong></h1>
 <hr>
 </div>
 <div class="om-os-container">
