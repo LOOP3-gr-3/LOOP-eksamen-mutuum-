@@ -1,4 +1,4 @@
-//skaber connection til databasen
+<!--skaber connection til databasen-->
 <?php
 require_once('conn.php');
 if (isset($_SESSION['user_id']))
