@@ -2,128 +2,56 @@
 $page = ('Forside');
 require_once('includes/header.php');
 ?>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
  <!-- Page Content -->
-  <div class="container">
+<div class="container">
 
     <!-- Jumbotron Header -->
-<header class="jumbotron my-4">
+<header class="jumbotron my-4" id="baggrundpaaforside">
 
 <!--For nu er styler jeg inde på siden så der kan holdes overblik med det-->
-        <img id="logoforside" src="images/logo.png"> 
-<style>
-    header {
-        background-color: whitesmoke;
-    }
-    #logoforside {
-       width: 30%;
-        height: auto;
-    }
-    .card-img-top {
-        width: 40%;
-        height: auto;
-        margin-left: 30%;
-    }
-    .btn btn-primary btn-lg{
-        background-color: forestgreen;
-        border-bottom-color: forestgreen;
-    }
-    #forsideliste{
-        text-align: left;
-    }
-</style>
-    
+        <img id="logoforside" src="images/logo.png">     
       <p>Mutuum er et sted for alle. Der kan udlånes og lånes til hvem som helst eller til bestemt personer. <br><br>
     Siden er dannet på baggrund af sikkerhed og muligheden for at få hjælp og planlægge din økonomiske situationer</p>
-      <a href="opretbruger.php" class="btn btn-primary btn-lg">OPRET BRUGER</a>
+      <a href="opretbruger.php" class="btn btn-default btn-lg">OPRET BRUGER</a>
 </header>
+
+<!-- Container (Services Section) -->
+<div id="services" class="container-fluid text-center">
+  <div class="row slideanim">
       
-    <!-- Page Features -->
-    <div class="row text-center">
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="images/lock.PNG" alt="">
-          <div class="card-body">
-            <h4 class="card-title">SIKKERHED</h4>
-            <p class="card-text">Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
+    <div class="col-sm-4">
+        <img class="forsidesymbol" src="images/lock.PNG">
+      <h4>SIKKERHED</h4>
+      <p class="card-text">Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
             <p>Udfyld ansøgning til kreditgodkendelse - godkend den endelige rente og lånebetingelser. Alt står med stort, ingen skjulte gebyrer</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="images/checkbox.PNG" alt="">
-          <div class="card-body">
-            <h4 class="card-title">BETINGELSER</h4>
+    </div>
+      
+    <div class="col-sm-4">
+          <img class="forsidesymbol" src="images/checkbox.PNG">
+            <h4>BETINGELSER</h4>
                 <ul id="forsideliste">
                     <li>Du skal være fyldt 18 år</li>
                     <li>Have nemID</li>
                     <li>Alle punkter ved oprettelse skal udfyldes og med korrekte oplysninger</li>
                 </ul> 
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="images/l%C3%A5ngiver.PNG" alt="">
-          <div class="card-body">
-            <h4 class="card-title">LÅNTAGER</h4>
-            <p class="card-text">Start dit lån med kun ét klik. Mutuum står klar til at hjælpe dig, der er bl.a. mulighed for rådgivning gennem KFUM. <br>Du kan oprette dig som bruger med det samme og tage et lån på under 5 minutter. Det er et lån mellem dig og långiver, vi blander os ikke</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-lg-3 col-md-6 mb-4">
-        <div class="card h-100">
-          <img class="card-img-top" src="images/l%C3%A5ntager.PNG" alt="">
-          <div class="card-body">
-            <h4 class="card-title">LÅNGIVER</h4>
-            <p class="card-text">Start din investering med kun ét klik. Med Mutuum behøver du hverken være økonom eller millionær for at have en professionel investering. Opret dig med det samme og indsæt dit beløb ved, at lave en kontrakt - lån dig tilbage og tjen med god samvittighed. </p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-      
-<div id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
-
-<div class="jumbotron text-center">
-  
-  <p>Mutuum er et sted for alle. Der kan udlånes og lånes til hvem som helst eller til bestemt personer. <br><br>
-    Siden er dannet på baggrund af sikkerhed og muligheden for at få hjælp og planlægge din økonomiske situationer</p>
-      <a href="opretbruger.php" class="btn btn-primary btn-lg">OPRET BRUGER</a> 
-</div>
-
-<!-- Container (Services Section) -->
-<div id="services" class="container-fluid forside text-center">
-    <h2>FORDELE VED MUTTUM</h2>
-  <div class="row slideanim">
-      
-    <div class="col-sm-4">
-        <img id="logoforside" src="images/lock.PNG">
-      <h4>SIKKERHED</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-      
-    <div class="col-sm-4">
-          <img id="logoforside" src="images/checkbox.PNG">
-            <h4>BETINGELSER</h4>
-                <p>Lorem ipsum dolor sit amet..</p>
     </div>
     <div class="col-sm-4">
-        <img id="logoforside" src="images/l%C3%A5ntager.PNG">
+        <img class="forsidesymbol" src="images/l%C3%A5ntager.PNG">
         <h4>LÅNGIVER eller LÅNTAGER</h4>
-            <p>Lorem ipsum dolor sit amet..</p>
+             <p class="card-text">Start din investering eller dit lån med kun ét klik. Med Mutuum behøver du hverken være økonom eller millionær for at kunne drage nytte af hjemmesiden.</p>
     </div>
   </div>
- </div>
-
+ </div>      
+     
 <!-- Container (Portfolio Section) -->
-<div id="portfolio" class="container-fluid text-center bg-grey">
-  
+<div id="portfolio" class="container-fluid text-center">
   <h2>Tanken bag MUTUUM</h2>
   <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
     <!-- Indicators -->
@@ -144,13 +72,21 @@ require_once('includes/header.php');
       <div class="item">
         <h4>"Visionen er at lave en app, der er professionel med sikkerhed i højsædet vha. samarbejdspartnere såsom nemID, Likvido etc."<br><span>Xander, opdragsgiver</span></h4>
       </div>
-    </div>
-  </div>
-</div>
 
+ <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+ </div>
+</div>
 <!-- Container (Contact Section) -->
 <div id="contact" class="container-fluid bg-grey">
-  <h2 class="text-center">CONTACT</h2>
+  <h1 class="text-center">Kontakt</h1>
   <div class="row">
     <div class="col-sm-5">
       <p>Kontak os på følgende informationer</p>
@@ -158,7 +94,10 @@ require_once('includes/header.php');
       <p><span class="glyphicon glyphicon-phone"></span> +45 12345678</p>
       <p><span class="glyphicon glyphicon-envelope"></span> mutuum@hotmail.com</p>
     </div>
-    <div class="col-sm-7 slideanim">
+    
+        <button data-toggle="collapse" data-target="#demo" class="btn btn-default btn-lg">Åben kontaktformular</button>      
+            <div id="demo" class="collapse">
+                <div class="col-sm-7 slideanim">
       <div class="row">
         <div class="col-sm-6 form-group">
           <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
@@ -170,13 +109,15 @@ require_once('includes/header.php');
       <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea><br>
       <div class="row">
         <div class="col-sm-12 form-group">
-          <button class="btn btn-default pull-right" type="submit">Send</button>
+          <button class="btn btn-primary pull-right" type="submit">Send</button>
         </div>
       </div>
     </div>
   </div>
 </div>
 </div>
+</div>
+      
 
 <script>
 $(document).ready(function(){
@@ -214,6 +155,9 @@ $(document).ready(function(){
   });
 })
 </script>
+<?php 
+require_once("includes/footer.php")
+?>
 
 </body>
 </html>

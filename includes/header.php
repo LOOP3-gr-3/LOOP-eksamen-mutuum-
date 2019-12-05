@@ -1,5 +1,5 @@
+<!--skaber connection til databasen-->
 <?php
-//skaber connection til databasen
 require_once('conn.php');
 if (isset($_SESSION['user_id']))
 //Her skal tilføjes, hvis der skal være forskel på navbarens udseende?>
