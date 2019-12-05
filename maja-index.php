@@ -92,7 +92,7 @@ require_once('includes/header.php');
       <p>Kontak os på følgende informationer</p>
       <p><span class="glyphicon glyphicon-map-marker"></span>Birk Centerpark 15, 7400 Herning</p>
       <p><span class="glyphicon glyphicon-phone"></span> +45 12345678</p>
-      <p><span class="glyphicon glyphicon-envelope"></span> mutuum@hotmail.com</p>
+      <p><span class="glyphicon glyphicon-envelope"></span> kontakt@mutuum.dk</p>
     </div>
     
         <button data-toggle="collapse" data-target="#demo" class="btn btn-default btn-lg">Åben kontaktformular</button>      
