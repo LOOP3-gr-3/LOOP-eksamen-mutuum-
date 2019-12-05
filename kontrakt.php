@@ -1,9 +1,9 @@
-<?php 
+<!--<?php 
     $page = ('Oprettelse af kontrakt');
     require_once('includes/header.php');/*-- her henter jeg headeren ind og kontraktdatabasen */
-    if (isset($_SESSION['user_id'])) {
+    /*if (isset($_SESSION['user_id'])) {
         header('location: kontrakt.php');
-}
+} */
 if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsperiode']) && isset($_POST['maanedlig_afdrag']) && isset($_POST['kontraktbrud']) && isset($_POST['kredit_it'])) {
     $laangiver_user_id = $_SESSION['user_id'];
     $laangiver_user_id = $_POST['laangiver_user_id'];
@@ -211,7 +211,7 @@ if (isset($_POST['beloeb']) && isset($_POST['rente']) && isset($_POST['bindingsp
             <?php
                 if(isset($_POST['mail'])) {
                     $mail = $_POST['mail'];
-                    $query5 = "INSERT INTO kontrakt FROM users WHERE mail = '$mail'";
+                    $query5 = "SELECT user_id FROM users WHERE mail = '$mail'";
                     $result5 = mysqli_query($con, $query5);
                     if (mysqli_errno($con) == 1062) {
 			         echo '<script>alert("Den vil være synlig og tilgængelig under Matchsiden for din låntager");</script>';

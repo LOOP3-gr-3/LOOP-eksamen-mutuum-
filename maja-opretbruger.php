@@ -1,4 +1,3 @@
-<!-- Her inkluderes headeren, pagen får navn, og vi tjekker om der er sat en SESSION hvor brugeren ér logget ind -->
 <?php
 $page = "Opret Bruger på MUTUUM";
 require_once('includes/header.php');

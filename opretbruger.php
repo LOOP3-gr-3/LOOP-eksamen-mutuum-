@@ -1,9 +1,7 @@
-
-<!-- Her inkluderes headeren, pagen får navn, og vi tjekker om der er sat en SESSION hvor brugeren ér logget ind -->
-
 <?php
 $page = "Opret Bruger på MUTUUM";
 require_once('includes/header.php');
+if (!isset($_SESSION)) session_start();
 if (isset($_SESSION['user_id'])) {
 	header('Location: minside.php');
 }

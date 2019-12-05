@@ -1,5 +1,6 @@
 <?php
 require_once('conn.php');
+if (!isset($_SESSION)) session_start();
 if (isset($_SESSION['user_id']))
 ?>
 <!--skaber connection til databasen-->
