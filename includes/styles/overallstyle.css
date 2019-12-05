@@ -114,8 +114,9 @@ td, th {
 
 
 /*-----------------------MinProfil--------------------*/
-#retoplysninger, #mineaftaler {
-    border-radius: 3em;
+.overheadbillede {
+    background-image: url("/images/slide1.PNG
+    ");
 }
 
 
