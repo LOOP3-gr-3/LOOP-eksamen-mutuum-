@@ -161,7 +161,7 @@ h1 {
     text-align: left;
 }
 .forsidesymbol {
-    width: 30%;
+    width: 40%;
     height: auto;
 }
 #contact {
@@ -176,7 +176,6 @@ h1 {
     color: #303030;
     font-weight: 400;
     margin-bottom: 2em;
-  }  
   }
   .bg-grey {
     background-color: #f6f6f6;
@@ -232,19 +231,15 @@ h1 {
     }
   }
   @media screen and (max-width: 768px) {
-    .col-sm-4 {
+    .majaindex {
       text-align: center;
       margin: 25px 0;
     }
-    .btn-lg {
+    .majaopretbrugerknap {
       width: 100%;
       margin-bottom: 35px;
     }
   }
-  @media screen and (max-width: 480px) {
-    .logo {
-      font-size: 150px;
-    }
 
 #forsidekontaktformular {
           text-align: center;

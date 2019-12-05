@@ -3,7 +3,7 @@
     $page = ('Opret lånekontrakt');
     require_once('includes/header.php');
     if (isset($_SESSION['user_id'])) {
-        header('location:forside.php');
+    header('location:forside.php');
 }
 ?>
 

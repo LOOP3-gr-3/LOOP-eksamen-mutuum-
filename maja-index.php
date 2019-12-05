@@ -19,21 +19,21 @@ require_once('includes/header.php');
         <img id="logoforside" src="images/logo.png">     
       <p>Mutuum er et sted for alle. Der kan udlånes og lånes til hvem som helst eller til bestemt personer. <br><br>
     Siden er dannet på baggrund af sikkerhed og muligheden for at få hjælp og planlægge din økonomiske situationer</p>
-      <a href="opretbruger.php" class="btn btn-default btn-lg">OPRET BRUGER</a>
+      <a href="opretbruger.php" class="btn btn-default btn-lg majaopretbrugerknap">OPRET BRUGER</a>
 </header>
 
 <!-- Container (Services Section) -->
 <div id="services" class="container-fluid text-center">
   <div class="row slideanim">
       
-    <div class="col-sm-4">
+    <div class="col-sm-4 majaindex">
         <img class="forsidesymbol" src="images/lock.PNG">
       <h4>SIKKERHED</h4>
       <p class="card-text">Nem og hurtig ansøgning. Bliv godkendt samme dag, pengene udbetales direkte til din konto</p>
             <p>Udfyld ansøgning til kreditgodkendelse - godkend den endelige rente og lånebetingelser. Alt står med stort, ingen skjulte gebyrer</p>
     </div>
       
-    <div class="col-sm-4">
+    <div class="col-sm-4 majaindex">
           <img class="forsidesymbol" src="images/checkbox.PNG">
             <h4>BETINGELSER</h4>
                 <ul id="forsideliste">
@@ -42,7 +42,7 @@ require_once('includes/header.php');
                     <li>Alle punkter ved oprettelse skal udfyldes og med korrekte oplysninger</li>
                 </ul> 
     </div>
-    <div class="col-sm-4">
+    <div class="col-sm-4 majaindex">
         <img class="forsidesymbol" src="images/l%C3%A5ntager.PNG">
         <h4>LÅNGIVER eller LÅNTAGER</h4>
              <p class="card-text">Start din investering eller dit lån med kun ét klik. Med Mutuum behøver du hverken være økonom eller millionær for at kunne drage nytte af hjemmesiden.</p>
@@ -95,7 +95,7 @@ require_once('includes/header.php');
       <p><span class="glyphicon glyphicon-envelope"></span> kontakt@mutuum.dk</p>
     </div>
     
-        <button data-toggle="collapse" data-target="#demo" class="btn btn-default btn-lg">Åben kontaktformular</button>      
+        <button data-toggle="collapse" data-target="#demo" class="btn btn-default btn-lg majaopretbrugerknap">Åben kontaktformular</button>      
             <div id="demo" class="collapse">
                 <div class="col-sm-7 slideanim">
       <div class="row">
